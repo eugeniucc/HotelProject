@@ -1,0 +1,49 @@
+@media (max-width: 1120px) {
+  .around {
+    &_title {
+      margin: 0rem 2rem 4rem 2rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .around-swiper {
+    display: none;
+  }
+  .around_wrapper-mobile {
+    display: block;
+  }
+  .around {
+    padding: 4rem 0rem;
+    &_title {
+      text-align: center;
+      @include h3-mobile;
+    }
+    &_wrapper-mobile {
+      position: relative;
+      max-width: 35.3rem;
+      height: 27.6rem;
+      margin: 0rem auto 4rem auto;
+    }
+  }
+  .around_card-btn-mobile {
+    right: 2rem;
+    bottom: 1.6rem;
+  }
+  .swiper-scrollbar-around-mobile {
+    width: 90% !important;
+    left: 5% !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .around_wrapper-mobile {
+    height: auto;
+    margin: 0rem 2rem 4rem 2rem;
+  }
+  .around_wrapper-mobile--img {
+    max-width: 100%;
+    width: 100%;
+  }
+}

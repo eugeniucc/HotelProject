@@ -1,0 +1,76 @@
+@import "../scss/mixins/mixins";
+@import "../scss/innercomp/catalog-btn";
+@import "../scss/animations/btn-hov";
+
+.catalog {
+  padding: 5.2rem 0rem 2.8rem 0rem;
+  &_descr {
+    display: flex;
+    border-radius: 4rem;
+    background: linear-gradient(270deg, #fff 0%, #f6f6f6 100%);
+  }
+  &_content {
+    padding: 5.6rem 0rem 0rem 7.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+  &_box {
+    &-img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &_title {
+    @include h3;
+  }
+  &_text {
+    @include catalog-text;
+    max-width: 42.4rem;
+    width: 100%;
+  }
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    &-btn {
+      &--black {
+        @include deals-p-white;
+        @include catalog-btn-black;
+        text-decoration: none;
+      }
+      &--white {
+        @include deals-p;
+        @include catalog-btn-white;
+        // &:hover svg path {
+        //   fill: var(--white);
+        // }
+        text-decoration: none;
+      }
+    }
+  }
+  .catalog_wrapper-mobile-btn--black {
+    @include deals-p-white;
+    @include catalog-btn-black;
+    text-decoration: none;
+  }
+}
+
+.catalog_wrapper-sign-btn--black {
+  @include deals-p-white;
+  @include catalog-btn-black;
+  text-decoration: none;
+}
+
+.catalog_title-mobile {
+  display: none;
+}
+.catalog_img-mobile {
+  display: none;
+}
+.catalog_wrapper-mobile-btn--black {
+  display: none;
+}
+.catalog_wrapper-sign-btn--black {
+  display: none;
+}

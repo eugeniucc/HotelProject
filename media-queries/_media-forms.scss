@@ -1,0 +1,39 @@
+@media (max-width: 1100px) {
+  .forms {
+    &_content {
+      &-new,
+      &-ready {
+        background-size: 30%;
+        background-position-y: top;
+      }
+    }
+  }
+}
+@media (max-width: $md) {
+  .forms {
+    &_content {
+      flex-direction: column;
+      align-items: center;
+      &-new,
+      &-ready {
+        width: unset;
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .forms {
+    &_content {
+      display: none;
+    }
+  }
+  .forms_content-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: $sm) {
+  .forms {
+    padding: 4rem 0rem;
+  }
+}

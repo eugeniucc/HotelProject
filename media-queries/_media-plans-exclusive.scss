@@ -1,0 +1,62 @@
+@media (max-width: 1120px) {
+  .plans {
+    &_title-exclusive {
+      margin-bottom: 12rem;
+    }
+  }
+}
+@media (max-width: $md) {
+  .plans {
+    &_title-exclusive {
+      margin-bottom: 0rem;
+    }
+    &_card-exclusive {
+      height: 65rem;
+    }
+  }
+}
+@media (max-width: 670px) {
+  .plans {
+    &_title-exclusive {
+      max-width: 37rem;
+      width: 100%;
+      margin: 0rem auto 4rem auto;
+    }
+    &_card-exclusive {
+      height: 50rem;
+    }
+  }
+  .plans_exclusive-form {
+    width: 93%;
+  }
+}
+@media (max-width: $sm) {
+  .plans {
+    padding: 4rem 0rem;
+    &_exclusive {
+      padding: 4rem 0rem 0rem 0rem;
+    }
+    &_title-exclusive {
+      @include h3-mobile;
+      max-width: 27.1rem;
+    }
+    &_form {
+      padding: 5.6rem 2.4rem 2.4rem 2.4rem;
+    }
+  }
+  .plans_exclusive-form {
+    height: unset;
+  }
+  .plans_form-content--title {
+    font-size: 2rem;
+  }
+  .plans_form-content--text {
+    font-size: 1.4rem;
+  }
+  .plans_form-box--btn {
+    display: none;
+  }
+  .plans_form-box--btn-mobile {
+    display: block;
+  }
+}

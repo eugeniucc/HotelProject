@@ -1,0 +1,121 @@
+@import "../scss/mixins/mixins";
+@import "../scss/innercomp/btn";
+@import "../scss/animations/btn-hov";
+
+.interior {
+  padding: 5.2rem 0rem;
+  &_box {
+    display: flex;
+    gap: 10.4rem;
+    margin-bottom: 4rem;
+    &-title {
+      @include h3;
+    }
+    &-text {
+      @include deals-p;
+    }
+  }
+  &_tabs {
+    &-list {
+      display: flex;
+      gap: 4rem;
+      justify-content: flex-end;
+      margin-bottom: 4.4rem;
+      &--text {
+        @include deals-p-gray;
+        cursor: pointer;
+        height: 3.5rem;
+        padding-bottom: 0.4rem;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  &_wrapper {
+    display: flex;
+    gap: 2.4rem;
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      &--img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &--img {
+        max-width: 100%;
+        width: 100%;
+      }
+      &--btn {
+        @include btn-form-white;
+        @include btn-hov-black;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+#first-interior-tab {
+  @include deals-p;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 0.1rem solid var(--btn-bg);
+}
+.interior_tabs-list--text.active {
+  transition: all 0.4s ease-in-out;
+  @include deals-p;
+  border-bottom: 0.1rem solid var(--btn-bg);
+}
+#first-interior-tab.remove {
+  color: var(--gray);
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.interior_wrapper {
+  display: none;
+}
+#living {
+  display: flex;
+}
+#kitchen {
+  display: none;
+}
+#bedroom {
+  display: none;
+}
+#bathroom {
+  display: none;
+}
+
+.interior_wrapper-content--img-mobile {
+  display: none;
+}
+.interior_wrapper-box--img-mobile {
+  display: none;
+}
+
+.interior-mobile-vertical {
+  @include btn-form-white;
+  @include btn-hov-black;
+  max-width: 100%;
+  width: 100%;
+}
+
+.interior-vertical-slider-mobile {
+  @include btn-form-white;
+  @include btn-hov-black;
+  max-width: 100%;
+  width: 100%;
+  display: none;
+}
+.area-vertical-show {
+  @include btn-form-white;
+  @include btn-hov-black;
+  max-width: 100%;
+  width: 100%;
+  display: none;
+}

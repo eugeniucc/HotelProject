@@ -1,0 +1,129 @@
+@media (max-width: 1120px) {
+  .location {
+    &_wrapper {
+      margin: 0rem 2rem 4rem 2rem;
+    }
+    &_map {
+      margin: 0rem 2rem;
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .location {
+    &_wrapper {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+}
+@media (max-width: 880px) {
+  .leaflet-top,
+  .leaflet-left {
+    left: 92%;
+  }
+}
+@media (max-width: 760px) {
+  .leaflet-top,
+  .leaflet-left {
+    left: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .leaflet-top,
+  .leaflet-left {
+    left: 88%;
+  }
+}
+
+@media (max-width: $md) {
+  .location {
+    padding: 4rem 0rem;
+  }
+  .location_wrapper-list--text {
+    max-width: 10rem;
+  }
+  #map {
+    height: 44.4rem;
+  }
+  .leaflet-top,
+  .leaflet-left {
+    top: 73%;
+  }
+}
+@media (max-width: $sm) {
+  .location {
+    padding: 4rem 0rem;
+    &_wrapper {
+      &-title {
+        @include h3-mobile;
+        margin: 0rem;
+      }
+      &-list {
+        display: none;
+      }
+    }
+  }
+  .location_wrapper-list-mobile {
+    display: flex;
+    padding: 2.4rem 2rem 0rem 2rem;
+    max-width: 100%;
+    gap: 0;
+  }
+  .location_wrapper-list--text {
+    display: none;
+  }
+  .location_wrapper-list--item-mobile {
+    gap: 0.8rem;
+    width: calc(100% - 0.8rem);
+    justify-content: center;
+  }
+  .location_box-cover {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .location_box-cover--black {
+    @include location-p-xsmall-black;
+  }
+  .location_box-cover--gray {
+    @include location-p-xsmall-gray;
+  }
+  .location_box-car-mobile,
+  .location_box-human-mobile {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .location_box-mobile {
+    max-width: 4.8rem;
+  }
+}
+@media (max-width: 520px) {
+  .leaflet-top,
+  .leaflet-left {
+    left: 86%;
+  }
+}
+@media (max-width: 450px) {
+  .leaflet-top,
+  .leaflet-left {
+    left: 84%;
+  }
+  .location_wrapper-list-mobile {
+    max-width: 90%;
+  }
+  .location_wrapper-list--item-mobile {
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px) {
+  .leaflet-top,
+  .leaflet-left {
+    left: 82%;
+  }
+}
+@media (max-width: 340px) {
+  .leaflet-top,
+  .leaflet-left {
+    left: 80%;
+  }
+}

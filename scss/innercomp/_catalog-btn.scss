@@ -1,0 +1,26 @@
+@mixin catalog-btn-black {
+  max-width: 36rem;
+  width: 100%;
+  border-radius: 4rem;
+  border: 0.01rem solid var(--gray);
+  background-color: var(--btn-bg);
+  padding: 1.5rem 3.2rem;
+  outline: none;
+  cursor: pointer;
+  @include btn-hov-white;
+}
+@mixin catalog-btn-white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 36rem;
+  width: 100%;
+  border-radius: 4rem;
+  border: 0.01rem solid var(--gray);
+  background-color: var(--white);
+  padding: 1.2rem 3.2rem;
+  outline: none;
+  cursor: pointer;
+  @include btn-hov-black;
+}

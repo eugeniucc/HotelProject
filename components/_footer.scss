@@ -1,0 +1,321 @@
+@import "../scss/mixins/mixins";
+@import "../scss/animations/btn-hov";
+
+.footer {
+  margin: 5.2rem 2.4rem 2.4rem 2.4rem;
+  background-color: var(--btn-bg);
+  border-radius: 2rem;
+  padding: 2.4rem 14.8rem;
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+    &-logo {
+      @include footer-logo;
+    }
+    &-list {
+      display: flex;
+      gap: 4rem;
+    }
+    &-link {
+      text-decoration: none;
+      @include deals-p-white;
+    }
+    &-social {
+      gap: 0.8rem;
+    }
+    &-consult {
+      gap: 2.4rem;
+      &-text {
+        @include deals-p-white;
+        max-width: 37rem;
+        width: 100%;
+      }
+      &--form {
+        background-color: var(--white);
+        border: 0.01rem solid var(--white);
+        @include deals-p-black;
+        max-width: 27.8rem;
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        @include btn-hov-black;
+      }
+    }
+  }
+  &_box {
+    margin: 0rem 0rem 14rem 0rem;
+    align-items: center;
+    position: relative;
+    &-content {
+      z-index: -1;
+      opacity: 0;
+      border-radius: 4rem;
+      box-shadow: 0rem 0.2rem 4rem 0rem rgba(255, 255, 255, 0.05);
+      position: absolute;
+      content: "";
+      right: 0;
+      top: -7.4rem;
+      padding: 3.2rem;
+      background-color: var(--btn-bg);
+      transition: all 0.3s ease-in-out;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      text-align: center;
+      &--link {
+        @include tabs-white;
+        text-decoration: none;
+      }
+    }
+  }
+  &_list {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    &-link {
+      @include footer-link;
+    }
+  }
+}
+
+.footer_box-content.active {
+  opacity: 1;
+  z-index: 3;
+}
+
+.footer_content-mobile-list {
+  display: none;
+}
+
+// VERTICAL SLIDER DESKTOP
+
+.swiper-vertical-desktop {
+  height: calc(100vh - 2rem);
+}
+.swiper-slide-vertical-desktop {
+  height: 61.5rem !important;
+}
+#swiper-vertical-desktop--img-first {
+  margin-top: 4rem;
+  height: 57rem !important;
+}
+
+.swiper-vertical-desktop--img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1120px) {
+  .swiper-slide-vertical-desktop {
+    padding: 0rem 2rem;
+  }
+  .swiper-vertical-desktop--img {
+    height: inherit;
+  }
+}
+@media (max-width: $lg) {
+  .swiper-slide-vertical-desktop {
+    height: 55rem !important;
+  }
+  #swiper-vertical-desktop--img-first {
+    margin-top: 4rem;
+    height: 50rem !important;
+  }
+}
+
+.vertical_slider-desktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.close_vertical-slider--desktop {
+  width: 4.8rem;
+  height: 4.8rem;
+  position: absolute;
+  content: "";
+  z-index: 4;
+  bottom: 5%;
+  left: 50%;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  border-radius: 50%;
+  border: 0.1rem solid var(--btn-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+}
+
+.vertical_slider-desktop.active {
+  opacity: 1;
+  z-index: 3;
+}
+.close_vertical-slider--desktop.active {
+  opacity: 1;
+  z-index: 4;
+}
+
+// VERTICAL SLIDER MOBILE
+
+.swiper-vertical-mobile {
+  height: calc(100vh - 2rem);
+  overflow: hidden;
+}
+.swiper-slide-vertical-mobile {
+  height: 44rem !important;
+}
+
+.swiper-vertical-mobile--img {
+  margin: 0 auto;
+}
+
+#swiper-vertical-mobile--img-first {
+  margin-top: 3rem;
+  height: 41rem;
+  width: 35.3rem;
+}
+
+.vertical_slider-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.close_vertical-slider--mobile {
+  width: 4.8rem;
+  height: 4.8rem;
+  position: absolute;
+  content: "";
+  z-index: 4;
+  bottom: 5%;
+  left: 50%;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  border-radius: 50%;
+  border: 0.1rem solid var(--btn-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  transform: translate(-50%);
+}
+
+.vertical_slider-mobile.active {
+  opacity: 1;
+  z-index: 3;
+}
+.close_vertical-slider--mobile.active {
+  opacity: 1;
+  z-index: 4;
+}
+
+@media (max-width: 375px) {
+  .swiper-vertical-mobile--img {
+    max-width: 90%;
+    height: inherit;
+  }
+}
+// VERTICAL SLIDER TEXT
+
+.swiper-vertical-text {
+  height: calc(100vh - 2rem);
+}
+
+.swiper-vertical-text--img {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+.swiper-slide-vertical-text1 {
+  height: 71rem !important;
+}
+.swiper-slide-vertical-text {
+  height: 37.6rem !important;
+}
+.vertical_slider-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.close_vertical-slider--text {
+  width: 4.8rem;
+  height: 4.8rem;
+  position: absolute;
+  content: "";
+  z-index: 4;
+  bottom: 5%;
+  left: 50%;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  border-radius: 50%;
+  border: 0.1rem solid var(--btn-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  transform: translate(-50%);
+}
+
+.vertical_slider-text.active {
+  opacity: 1;
+  z-index: 3;
+}
+.close_vertical-slider--text.active {
+  opacity: 1;
+  z-index: 4;
+}
+
+.swiper-vertical-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  max-width: 35.3rem;
+  padding-top: 5.6rem;
+  margin: 0 auto;
+  &--title {
+    @include header-p20-black;
+    line-height: normal;
+    text-align: center;
+  }
+  &--text {
+    @include deals-p-small;
+  }
+}
+@media (max-width: 375px) {
+  .swiper-vertical-text-wrapper {
+    max-width: 90%;
+  }
+  .swiper-vertical-text--img {
+    height: inherit;
+  }
+}

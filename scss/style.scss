@@ -1,0 +1,84 @@
+// COMPONENTS
+@import "../components/header";
+@import "../components/forms";
+@import "../components/galery";
+@import "../components/about";
+@import "../components/plans";
+@import "../components/plans-exclusive";
+@import "../components/deal";
+@import "../components/interior";
+@import "../components/structure";
+@import "../components/constructor";
+@import "../components/area";
+@import "../components/location";
+@import "../components/around";
+@import "../components/catalog";
+@import "../components/consult";
+@import "../components/footer";
+
+// MEDIA QUERIES COMPONENTS
+@import "../media-queries/media-header";
+@import "../media-queries/media-forms";
+@import "../media-queries/media-galery";
+@import "../media-queries/media-about";
+@import "../media-queries/media-plans";
+@import "../media-queries/media-plans-exclusive";
+@import "../media-queries/media-deals";
+@import "../media-queries/media-interior";
+@import "../media-queries/media-structure";
+@import "../media-queries/media-constructor";
+@import "../media-queries/media-area";
+@import "../media-queries/media-location";
+@import "../media-queries/media-around";
+@import "../media-queries/media-catalog";
+@import "../media-queries/media-consult";
+@import "../media-queries/media-footer";
+
+// MIXINS
+@import "../scss/mixins/mixins";
+
+// ANIMATIONS
+
+@import "../scss/animations/btn-hov";
+
+// INNER COMPONENTS
+@import "../scss/innercomp/btn";
+@import "../scss/innercomp/input-form";
+@import "../scss/innercomp/catalog-btn";
+
+// VARIABLES
+@import "../scss/variables/variables";
+
+// FONTS
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url("../../fonts/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// EXTRA FONTS
+
+@import "../scss/extrafonts/segoeui";
+
+// HTML
+* {
+  box-sizing: border-box;
+}
+
+a,
+span,
+img {
+  display: block;
+}
+
+html {
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+// CONTAINER
+.container {
+  max-width: 109.6rem;
+  margin: 0 auto;
+}

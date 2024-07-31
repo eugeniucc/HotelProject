@@ -1,0 +1,53 @@
+@import "../scss/mixins/mixins";
+
+.around {
+  padding: 5.2rem 0rem;
+  &_title {
+    @include h3;
+    margin-bottom: 2.4rem;
+  }
+  &_card {
+    &-btn {
+      position: absolute;
+      content: "";
+      right: 2.4rem;
+      bottom: 2.4rem;
+      @include deals-p-white;
+      border-radius: 4rem;
+      border: 0.1rem solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(1rem);
+      cursor: pointer;
+      padding: 1.2rem 5.5rem;
+    }
+  }
+}
+
+// AROUND SWIPER
+
+.around-swiper-scrollbar {
+  display: flex;
+  align-items: center;
+  height: 0.2rem !important;
+  background-color: var(--light-gray);
+  left: 50% !important;
+  transform: translate(-50%);
+  max-width: 130rem;
+}
+.swiper-scrollbar-drag {
+  height: 0.8rem;
+  border-radius: 2rem;
+  background-color: var(--light-gray);
+}
+.swiper-slide-around {
+  max-width: 48rem !important;
+  width: 100% !important;
+}
+
+.around-swiper {
+  padding-bottom: 5rem;
+}
+
+.around_wrapper-mobile {
+  display: none;
+}

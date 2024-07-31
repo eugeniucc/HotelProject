@@ -1,0 +1,125 @@
+@media (max-width: 1230px) {
+  .about {
+    &_card {
+      width: 90%;
+      margin: 0 auto;
+      height: 35rem;
+    }
+  }
+}
+@media (max-width: 1120px) {
+  .about {
+    &_card {
+      width: 80%;
+      margin: 0 auto;
+      height: 50rem;
+    }
+    &_content {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: $md) {
+  .about {
+    &_card {
+      flex-direction: column;
+      padding: 3.2rem;
+      width: 94%;
+      display: none;
+      &-box {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        &--img {
+          width: 6.4rem;
+        }
+      }
+      &-content {
+        gap: 1.6rem;
+      }
+      &-box {
+        margin-top: 2.5rem;
+        align-items: center;
+        &--name {
+          text-align: left;
+        }
+      }
+    }
+    .swiper-about {
+      padding-bottom: 8rem;
+    }
+  }
+  .swiper-about-button--prev,
+  .swiper-about-button--next {
+    top: 90%;
+  }
+  .swiper-about-button--prev {
+    left: 2.2rem;
+  }
+  .swiper-about-button--next {
+    right: 2.2rem;
+  }
+  .about_card-mobile {
+    display: block;
+    margin: 0 2rem;
+    padding: 3.2rem;
+    border-radius: 4rem;
+    background-color: var(--btn-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 30rem;
+  }
+}
+
+@media (max-width: 684px) {
+  .about_card-mobile {
+    height: 40rem;
+  }
+  .swiper-about-button--prev,
+  .swiper-about-button--next {
+    top: 94%;
+  }
+}
+
+@media (max-width: $sm) {
+  .about {
+    padding: 4rem 0rem;
+    &_content {
+      flex-direction: column;
+      gap: 0.8rem;
+      margin: 0rem 0rem 2.4rem 0rem;
+      align-items: center;
+      &-text {
+        align-self: unset;
+        @include mobile-text-16-gray;
+      }
+      &-title {
+        @include h3-mobile;
+      }
+    }
+  }
+}
+
+@media (max-width: 491px) {
+  .about_card-mobile {
+    height: 45rem;
+  }
+}
+@media (max-width: 408px) {
+  .about_card-mobile {
+    height: 50rem;
+  }
+}
+@media (max-width: 366px) {
+  .about_card-mobile {
+    height: 55rem;
+  }
+}
+@media (max-width: 338px) {
+  .about_card-mobile {
+    height: 60rem;
+  }
+}

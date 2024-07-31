@@ -1,0 +1,3077 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GENERAL METAGRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HotelProject" />
+    <meta property="og:url" content="https://www.HotelProject.example" />
+    <!-- NO ICON <meta property="og:image" content="./icons/" /> -->
+    <meta property="og:description" content="HotelProject" />
+    <meta name="description" content="Hotel" />
+    <!-- TWITTER METAGRAPH -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="HotelProject" />
+    <!-- NO ICON <meta name="twitter:image" content="./icons/" /> -->
+    <meta property="twitter:description" content="HotelProject" />
+    <!-- NO KEYWORDS -->
+    <!-- NO LOGO ICONS -->
+    <!-- NO LOGO MASK ICON -->
+    <!-- NO LOGO MS APP -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="./js/swipers.js"></script>
+    <!-- SPLIDE JS -->
+    <link
+      href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "
+    ></script>
+    <script defer src="./js/splide.js"></script>
+    <!-- LEAFLET -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="./js/leaflet.js"></script>
+    <!-- MY SCRIPTS -->
+    <script defer src="./js/forms-tabs.js"></script>
+    <script defer src="./js/galery-tabs.js"></script>
+    <script defer src="./js/interior-tabs.js"></script>
+    <script defer src="./js/header-menu.js"></script>
+    <script defer src="./js/key-escape-close.js"></script>
+    <script defer src="./js/modal-call-user.js"></script>
+    <script defer src="./js/modal-download.js"></script>
+    <script defer src="./js/modal-call-mobile.js"></script>
+    <script defer src="./js/modal-download-mobile.js"></script>
+    <script defer src="./js/vertical-slider-desktop.js"></script>
+    <script defer src="./js/vertical-slider-mobile.js"></script>
+    <!-- MY STYLES -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/min_css/style.min.css" />
+    <title>HotelProject</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_content-mobile">
+          <div class="header_content-social header_content-mobile-social">
+            <a
+              class="header_content-social--links header_content-mobile--links"
+              href="#"
+              target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z"
+                  fill="#302F37"
+                />
+              </svg>
+            </a>
+            <a
+              class="header_content-social--links header_content-mobile--links"
+              href="#"
+              target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M18.8547 4.05156C16.8906 2.08281 14.275 1 11.4953 1C5.75781 1 1.08906 5.66875 1.08906 11.4062C1.08906 13.2391 1.56719 15.0297 2.47656 16.6094L1 22L6.51719 20.5516C8.03594 21.3813 9.74687 21.8172 11.4906 21.8172H11.4953C17.2281 21.8172 22 17.1484 22 11.4109C22 8.63125 20.8188 6.02031 18.8547 4.05156ZM11.4953 20.0641C9.93906 20.0641 8.41562 19.6469 7.08906 18.8594L6.775 18.6719L3.50313 19.5297L4.375 16.3375L4.16875 16.0094C3.30156 14.6313 2.84688 13.0422 2.84688 11.4062C2.84688 6.63906 6.72812 2.75781 11.5 2.75781C13.8109 2.75781 15.9812 3.65781 17.6125 5.29375C19.2437 6.92969 20.2469 9.1 20.2422 11.4109C20.2422 16.1828 16.2625 20.0641 11.4953 20.0641ZM16.2391 13.5859C15.9813 13.4547 14.7016 12.8266 14.4625 12.7422C14.2234 12.6531 14.05 12.6109 13.8766 12.8734C13.7031 13.1359 13.2063 13.7172 13.0516 13.8953C12.9016 14.0688 12.7469 14.0922 12.4891 13.9609C10.9609 13.1969 9.95781 12.5969 8.95 10.8672C8.68281 10.4078 9.21719 10.4406 9.71406 9.44687C9.79844 9.27344 9.75625 9.12344 9.69062 8.99219C9.625 8.86094 9.10469 7.58125 8.88906 7.06094C8.67813 6.55469 8.4625 6.625 8.30313 6.61563C8.15313 6.60625 7.97969 6.60625 7.80625 6.60625C7.63281 6.60625 7.35156 6.67188 7.1125 6.92969C6.87344 7.19219 6.20312 7.82031 6.20312 9.1C6.20312 10.3797 7.13594 11.6172 7.2625 11.7906C7.39375 11.9641 9.09531 14.5891 11.7062 15.7188C13.3562 16.4312 14.0031 16.4922 14.8281 16.3703C15.3297 16.2953 16.3656 15.7422 16.5812 15.1328C16.7969 14.5234 16.7969 14.0031 16.7313 13.8953C16.6703 13.7781 16.4969 13.7125 16.2391 13.5859Z"
+                  fill="#302F37"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="header_content-consult header_content-mobile-consult">
+            <button
+              class="header_content-consult--form header_content-mobile--form"
+              id="header-modal-call-mobile"
+              type="button"
+            >
+              Оставить заявку
+            </button>
+            <button
+              class="header_content-consult--menu header_content-mobile--menu"
+              type="button"
+              id="header_mobile-menu"
+            >
+              <span class="dots_mobile">
+                <span class="dots_mobile-span"></span>
+                <span class="dots_mobile-span"></span>
+                <span class="dots_mobile-span"></span>
+              </span>
+            </button>
+          </div>
+          <div class="hidden" id="menu_mobile">
+            <ul class="menu_mobile-list">
+              <li class="menu_mobile-list--item">
+                <a href="#section-galery" class="menu_mobile-list--link"
+                  >Галерея</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-about" class="menu_mobile-list--link"
+                  >О проекте</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-plans" class="menu_mobile-list--link"
+                  >Платежные планы</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-deals" class="menu_mobile-list--link"
+                  >Аренда</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-interior" class="menu_mobile-list--link"
+                  >Отделка</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-structure" class="menu_mobile-list--link"
+                  >Инфраструктура</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-constructor" class="menu_mobile-list--link"
+                  >Застройщик</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-area" class="menu_mobile-list--link"
+                  >О районе</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-location" class="menu_mobile-list--link"
+                  >Расположение</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-around" class="menu_mobile-list--link"
+                  >Места рядом</a
+                >
+              </li>
+              <li class="menu_mobile-list--item">
+                <a href="#section-catalog" class="menu_mobile-list--link"
+                  >Каталог</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper header-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide header-swiper-slide">
+            <div class="container">
+              <div class="header-swiper_wrapper">
+                <div class="header_content">
+                  <div class="header_content-social">
+                    <a
+                      class="header_content-social--links"
+                      href="#"
+                      target="_blank"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="header_content-social--links"
+                      href="#"
+                      target="_blank"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M18.8547 4.05156C16.8906 2.08281 14.275 1 11.4953 1C5.75781 1 1.08906 5.66875 1.08906 11.4062C1.08906 13.2391 1.56719 15.0297 2.47656 16.6094L1 22L6.51719 20.5516C8.03594 21.3813 9.74687 21.8172 11.4906 21.8172H11.4953C17.2281 21.8172 22 17.1484 22 11.4109C22 8.63125 20.8188 6.02031 18.8547 4.05156ZM11.4953 20.0641C9.93906 20.0641 8.41562 19.6469 7.08906 18.8594L6.775 18.6719L3.50313 19.5297L4.375 16.3375L4.16875 16.0094C3.30156 14.6313 2.84688 13.0422 2.84688 11.4062C2.84688 6.63906 6.72812 2.75781 11.5 2.75781C13.8109 2.75781 15.9812 3.65781 17.6125 5.29375C19.2437 6.92969 20.2469 9.1 20.2422 11.4109C20.2422 16.1828 16.2625 20.0641 11.4953 20.0641ZM16.2391 13.5859C15.9813 13.4547 14.7016 12.8266 14.4625 12.7422C14.2234 12.6531 14.05 12.6109 13.8766 12.8734C13.7031 13.1359 13.2063 13.7172 13.0516 13.8953C12.9016 14.0688 12.7469 14.0922 12.4891 13.9609C10.9609 13.1969 9.95781 12.5969 8.95 10.8672C8.68281 10.4078 9.21719 10.4406 9.71406 9.44687C9.79844 9.27344 9.75625 9.12344 9.69062 8.99219C9.625 8.86094 9.10469 7.58125 8.88906 7.06094C8.67813 6.55469 8.4625 6.625 8.30313 6.61563C8.15313 6.60625 7.97969 6.60625 7.80625 6.60625C7.63281 6.60625 7.35156 6.67188 7.1125 6.92969C6.87344 7.19219 6.20312 7.82031 6.20312 9.1C6.20312 10.3797 7.13594 11.6172 7.2625 11.7906C7.39375 11.9641 9.09531 14.5891 11.7062 15.7188C13.3562 16.4312 14.0031 16.4922 14.8281 16.3703C15.3297 16.2953 16.3656 15.7422 16.5812 15.1328C16.7969 14.5234 16.7969 14.0031 16.7313 13.8953C16.6703 13.7781 16.4969 13.7125 16.2391 13.5859Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="header_content-consult">
+                    <p class="header_content-consult-text">
+                      Получите бесплатную констультацию от нашего эксперта
+                    </p>
+                    <button
+                      class="header_content-consult--form"
+                      type="button"
+                      data-menu="modal_call-desktop"
+                    >
+                      Оставить заявку
+                    </button>
+                    <button
+                      class="header_content-consult--menu"
+                      data-menu="desktop-menu"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.6248 11.6249H12.3748M11.6248 12.3749H12.3748M4.62476 11.6249H5.37476M4.62476 12.3749H5.37476M18.6248 11.6249H19.3748M18.6248 12.3749H19.3748M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM6 12C6 12.5523 5.55229 13 5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11C5.55229 11 6 11.4477 6 12ZM20 12C20 12.5523 19.5523 13 19 13C18.4477 13 18 12.5523 18 12C18 11.4477 18.4477 11 19 11C19.5523 11 20 11.4477 20 12Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="header_btn">
+                  <div class="swiper-button-next header-swiper-btn--next"></div>
+                  <div class="swiper-button-prev header-swiper-btn--prev"></div>
+                </div>
+                <div class="header_box">
+                  <div class="header_box-content">
+                    <h1 class="header_box-content--title">
+                      Soul Marbella Sunshine
+                    </h1>
+                    <p class="header_box-content--text">
+                      Доходний проект в центре Марбельи от застройщика.
+                      Доходность от 7% годовых.
+                    </p>
+                    <p class="header_box-content-mobile">
+                      Доходний проект в центре Марбельи от застройщика.
+                    </p>
+                    <p class="header_box-content-mobile--gray">
+                      Доходность - от 7% в год.
+                    </p>
+                  </div>
+                  <div class="header_box-download">
+                    <p class="header_box-download--title">
+                      Презентация комплекса
+                    </p>
+                    <p class="header_box-download--text">
+                      Внутри - интерьер, экстрерьер и плани проекта
+                    </p>
+                    <button
+                      class="header_box-download--btn"
+                      type="button"
+                      data-modal="modal-download"
+                    >
+                      Скачать
+                    </button>
+                  </div>
+                  <img
+                    class="header_box-img"
+                    src="./img/header-leaflet.png"
+                    alt="Буклет Отеля"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide header-swiper-slide">
+            <div class="container">
+              <div class="header-swiper_wrapper">
+                <div class="header_content">
+                  <div class="header_content-social">
+                    <a
+                      class="header_content-social--links"
+                      href="#"
+                      target="_blank"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="header_content-social--links"
+                      href="#"
+                      target="_blank"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M18.8547 4.05156C16.8906 2.08281 14.275 1 11.4953 1C5.75781 1 1.08906 5.66875 1.08906 11.4062C1.08906 13.2391 1.56719 15.0297 2.47656 16.6094L1 22L6.51719 20.5516C8.03594 21.3813 9.74687 21.8172 11.4906 21.8172H11.4953C17.2281 21.8172 22 17.1484 22 11.4109C22 8.63125 20.8188 6.02031 18.8547 4.05156ZM11.4953 20.0641C9.93906 20.0641 8.41562 19.6469 7.08906 18.8594L6.775 18.6719L3.50313 19.5297L4.375 16.3375L4.16875 16.0094C3.30156 14.6313 2.84688 13.0422 2.84688 11.4062C2.84688 6.63906 6.72812 2.75781 11.5 2.75781C13.8109 2.75781 15.9812 3.65781 17.6125 5.29375C19.2437 6.92969 20.2469 9.1 20.2422 11.4109C20.2422 16.1828 16.2625 20.0641 11.4953 20.0641ZM16.2391 13.5859C15.9813 13.4547 14.7016 12.8266 14.4625 12.7422C14.2234 12.6531 14.05 12.6109 13.8766 12.8734C13.7031 13.1359 13.2063 13.7172 13.0516 13.8953C12.9016 14.0688 12.7469 14.0922 12.4891 13.9609C10.9609 13.1969 9.95781 12.5969 8.95 10.8672C8.68281 10.4078 9.21719 10.4406 9.71406 9.44687C9.79844 9.27344 9.75625 9.12344 9.69062 8.99219C9.625 8.86094 9.10469 7.58125 8.88906 7.06094C8.67813 6.55469 8.4625 6.625 8.30313 6.61563C8.15313 6.60625 7.97969 6.60625 7.80625 6.60625C7.63281 6.60625 7.35156 6.67188 7.1125 6.92969C6.87344 7.19219 6.20312 7.82031 6.20312 9.1C6.20312 10.3797 7.13594 11.6172 7.2625 11.7906C7.39375 11.9641 9.09531 14.5891 11.7062 15.7188C13.3562 16.4312 14.0031 16.4922 14.8281 16.3703C15.3297 16.2953 16.3656 15.7422 16.5812 15.1328C16.7969 14.5234 16.7969 14.0031 16.7313 13.8953C16.6703 13.7781 16.4969 13.7125 16.2391 13.5859Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="header_content-consult">
+                    <p class="header_content-consult-text">
+                      Получите бесплатную констультацию от нашего эксперта
+                    </p>
+                    <button
+                      class="header_content-consult--form"
+                      type="button"
+                      data-menu="modal_call-desktop-second"
+                    >
+                      Оставить заявку
+                    </button>
+                    <button
+                      class="header_content-consult--menu"
+                      type="button"
+                      data-menu="desktop-menu-second"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.6248 11.6249H12.3748M11.6248 12.3749H12.3748M4.62476 11.6249H5.37476M4.62476 12.3749H5.37476M18.6248 11.6249H19.3748M18.6248 12.3749H19.3748M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM6 12C6 12.5523 5.55229 13 5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11C5.55229 11 6 11.4477 6 12ZM20 12C20 12.5523 19.5523 13 19 13C18.4477 13 18 12.5523 18 12C18 11.4477 18.4477 11 19 11C19.5523 11 20 11.4477 20 12Z"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="header_btn">
+                  <div class="swiper-button-next header-swiper-btn--next"></div>
+                  <div class="swiper-button-prev header-swiper-btn--prev"></div>
+                </div>
+                <div class="header_box">
+                  <div class="header_box-content">
+                    <h2 class="header_box-content--title">
+                      Soul Marbella Sunshine
+                    </h2>
+                    <p class="header_box-content--text">
+                      Доходний проект в центре Марбельи от застройщика.
+                      Доходность от 7% годовых.
+                    </p>
+                    <p class="header_box-content-mobile">
+                      Доходний проект в центре Марбельи от застройщика.
+                    </p>
+                    <p class="header_box-content-mobile--gray">
+                      Доходность - от 7% в год.
+                    </p>
+                  </div>
+                  <div class="header_box-download">
+                    <p class="header_box-download--title">
+                      Презентация комплекса
+                    </p>
+                    <p class="header_box-download--text">
+                      Внутри - интерьер, экстрерьер и плани проекта
+                    </p>
+                    <button
+                      class="header_box-download--btn"
+                      type="button"
+                      data-modal="modal-download-second"
+                    >
+                      Скачать
+                    </button>
+                  </div>
+                  <img
+                    class="header_box-img"
+                    src="./img/header-leaflet.png"
+                    alt="Буклет Отеля"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header_box-mobile-download">
+          <p class="header_box-download--title">Презентация комплекса</p>
+          <p class="header_box-download--text header_box-download-mobile--text">
+            Внутри - интерьер, экстрерьер и плани проекта
+          </p>
+          <button
+            class="header_box-download--btn"
+            type="button"
+            id="btn-download-header"
+          >
+            Скачать
+          </button>
+          <img
+            class="header-leaflet-mobile"
+            src="./img/header-leaflet-mobile.png"
+            alt="Буклет Отеля"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="forms">
+        <div class="container">
+          <div class="forms_content">
+            <div
+              class="forms_content-new"
+              style="background-image: url(./img/forms-bg.png)"
+            >
+              <h2 class="forms_content-new--title">Новые проекты в Марбелье</h2>
+              <div class="forms_wrapper">
+                <input
+                  class="forms_wrapper-name"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  class="forms_wrapper-phone"
+                  type="text"
+                  placeholder="+34 000 000 000"
+                />
+                <button class="forms_wrapper-btn" type="button">
+                  Скачать каталог
+                </button>
+              </div>
+            </div>
+            <div
+              class="forms_content-ready"
+              style="background-image: url(./img/forms-bg.png)"
+            >
+              <h2 class="forms_content-ready--title">
+                Готовые проекты в Марбелье
+              </h2>
+              <div class="forms_wrapper">
+                <input
+                  class="forms_wrapper-name"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  class="forms_wrapper-phone"
+                  type="text"
+                  placeholder="+34 000 000 000"
+                />
+                <button class="forms_wrapper-btn" type="button">
+                  Скачать каталог
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="forms_content-mobile">
+            <div class="forms_tabs-wrapper">
+              <button
+                class="forms_tabs-wrapper-new"
+                type="button"
+                id="forms-new"
+              >
+                Новые проекты
+              </button>
+              <button
+                class="forms_tabs-wrapper-ready"
+                type="button"
+                id="forms-ready"
+              >
+                Готовые проекты
+              </button>
+            </div>
+            <div class="forms_content-new forms_content-new-mobile">
+              <h2
+                class="forms_content-new--title forms_content-new--title-mobile"
+                id="forms-text"
+              >
+                Каталог новых проектов в Марбелье
+              </h2>
+              <div class="forms_wrapper">
+                <input
+                  class="forms_wrapper-name forms_wrapper-name-mobile"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  class="forms_wrapper-phone forms_wrapper-phone-mobile"
+                  type="text"
+                  placeholder="+34 000 000 000"
+                />
+                <button
+                  class="forms_wrapper-btn forms_wrapper-btn-mobile"
+                  type="button"
+                >
+                  Скачать каталог
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="galery" id="section-galery">
+        <div class="container">
+          <div class="galery_content">
+            <h3 class="galery_content-title">Галерея проекта</h3>
+            <div class="galery_tabs">
+              <ul class="galery_tabs-list">
+                <li class="galery_tabs-item-arch">
+                  <p class="galery_tabs-item--text-arch">Архитектура</p>
+                </li>
+                <li class="galery_tabs-item-inside">
+                  <p class="galery_tabs-item--text-inside">Интерьер</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="galery_view" id="galery_view-arch">
+            <div class="galery_view-box">
+              <img
+                loading="lazy"
+                class="galery_view-box--img"
+                src="./img/gallery-view1.png"
+                alt="Вид Из Отеля"
+              />
+              <img
+                loading="lazy"
+                class="galery_view-box--img"
+                src="./img/gallery-view2.png"
+                alt="Вид Из Отеля"
+              />
+            </div>
+            <div class="galery_view-content">
+              <img
+                loading="lazy"
+                class="galery_view-content--img"
+                src="./img/gallery-content1.png"
+                alt="Вид Из Отеля"
+              />
+              <div class="galery_view-content--wrapper">
+                <button
+                  class="galery_view-content--album"
+                  type="button"
+                  id="galery-show-download"
+                >
+                  Скачать фотоальбом
+                </button>
+                <button class="galery_view-content--all-vertical" type="button">
+                  Показать все фото
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="galery_view" id="galery_view-inside">
+            <div class="galery_view-box">
+              <img
+                loading="lazy"
+                class="galery_view-box--img"
+                src="./img/gallery-view2.png"
+                alt="Вид Из Отеля"
+              />
+              <img
+                loading="lazy"
+                class="galery_view-box--img"
+                src="./img/gallery-view2.png"
+                alt="Вид Из Отеля"
+              />
+            </div>
+            <div class="galery_view-content">
+              <img
+                loading="lazy"
+                class="galery_view-content--img"
+                src="./img/gallery-content1.png"
+                alt="Вид Из Отеля"
+              />
+              <div class="galery_view-content--wrapper">
+                <button class="galery_view-content--album" type="button">
+                  Скачать фотоальбом
+                </button>
+                <button class="galery_view-content--all" type="button">
+                  Показать все фото
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="galery_view-content--wrapper galery_view-content--mobile">
+            <button
+              class="galery_view-content--album"
+              id="show-modal-desktop-galery-download"
+              type="button"
+            >
+              Скачать фотоальбом
+            </button>
+            <button
+              class="galery_view-content--all"
+              type="button"
+              id="all-vertical"
+            >
+              Показать все фото
+            </button>
+          </div>
+          <div class="galery_box">
+            <h2 class="galery_box-title">Галерея проекта</h2>
+            <div class="galery_box-wrapper">
+              <p class="gallery_box-wrapper--text" id="galery_box-arch">
+                Архитектура
+              </p>
+              <p class="gallery_box-wrapper--text" id="galery_box-inside">
+                Интерьер
+              </p>
+            </div>
+            <div class="swiper galery_box-mobile-arch">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="galery_box-img"
+                    src="./img/galery-box-mobile.png"
+                    alt="Отель"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="galery_box-img"
+                    src="./img/galery-box-mobile.png"
+                    alt="Отель"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="galery_box-img"
+                    src="./img/galery-box-mobile.png"
+                    alt="Отель"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="galery_box-img"
+                    src="./img/galery-box-mobile.png"
+                    alt="Отель"
+                  />
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="swiper galery_box-mobile-inside">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="galery_box-img"
+                    src="./img/galery-box-mobile.png"
+                    alt="Отель"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="galery_box-img"
+                    src="./img/galery-box-mobile.png"
+                    alt="Отель"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="galery_box-img"
+                    src="./img/galery-box-mobile.png"
+                    alt="Отель"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="galery_box-img"
+                    src="./img/galery-box-mobile.png"
+                    alt="Отель"
+                  />
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="galery_view-content--wrapper galery_box--wrapper">
+              <button
+                class="galery_view-content--album galery_box--wrapper--album"
+                id="galery-download-btn"
+                type="button"
+              >
+                Скачать фотоальбом
+              </button>
+              <button
+                class="galery-vertical"
+                type="button"
+                id="show-vertical-mobile"
+              >
+                Показать все фото
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="section-about">
+        <div class="container">
+          <div class="about_content">
+            <h3 class="about_content-title">О проекте</h3>
+            <p class="about_content-text">Что говорят эксперты</p>
+          </div>
+        </div>
+        <div class="about_swiper-container">
+          <div class="swiper swiper-about">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="about_card">
+                    <div class="about_card-content">
+                      <p class="about_card-content--title segoe20">
+                        Идеал роскоши и современного дизайна
+                      </p>
+                      <p class="about_card-content--text segoe16-white">
+                        Проект редставляет собой идеальное сочетание
+                        современного дизайна и роскоши, предлагая изысканные
+                        жилые пространства и первоклассные удобства. Каждая
+                        деталь проекта, от просторных спален с панорамными
+                        окнами до великолепных открытых и крытых бассейнов,
+                        отражает высокий стандарт качества и комфорта. В этом
+                        проекте предусмотрены все условия для максимально
+                        комфортного проживания, что делает его идеальным выбором
+                        для тех, кто ценит стиль и элегантность в каждом аспекте
+                        своей жизни.
+                      </p>
+                    </div>
+                    <div class="about_card-box">
+                      <div class="about_card-box--circle">
+                        <img
+                          class="about_card-box--img"
+                          src="./img/about-sample.jpg"
+                          alt="Эксперт"
+                        />
+                      </div>
+                      <div class="about_card-box--wrapper">
+                        <p class="about_card-box--name segoe20">Алехандро</p>
+                        <p class="about_card-box--job segoe16-gray">
+                          Эксперт проекта
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about_card-mobile">
+                    <div class="about_card-content">
+                      <p class="about_card-content--title segoe20">
+                        Идеал роскоши и современного дизайна
+                      </p>
+                      <p class="about_card-content--text segoe14-white-mobile">
+                        Этот проект представляет собой пример элитного жилья в
+                        Марбелье. Эксклюзивные апартаменты с элегантным
+                        дизайном, просторными террасами и великолепными видами.
+                        Предлагает современные крытые и открытые бассейнам,
+                        уютные зоны отдыха и высококачественные материалы.
+                        Идеально подходит для тех, кто стремится к сочетанию
+                        роскоши и комфорта в престижном районе.
+                      </p>
+                    </div>
+                    <div class="about_card-box">
+                      <div class="about_card-box--circle">
+                        <img
+                          class="about_card-box--img"
+                          src="./img/about-sample.jpg"
+                          alt="Эксперт"
+                        />
+                      </div>
+                      <div class="about_card-box--wrapper">
+                        <p class="about_card-box--name segoe-name-mobile">
+                          Алехандро
+                        </p>
+                        <p class="about_card-box--job segoe12-white-mobile">
+                          Эксперт проекта
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="about_card">
+                    <div class="about_card-content">
+                      <p class="about_card-content--title segoe20">
+                        Премиальное жилье в сердце Марбельи
+                      </p>
+                      <p class="about_card-content--text segoe16-white">
+                        Это воплощение премиального жилья в Марбелье. Проект
+                        предлагает эксклюзивные апартаменты с изысканным
+                        дизайном интерьеров, просторными террасами и
+                        великолепными видами. Особое внимание уделено деталям:
+                        современные крытые и открытые бассейны, уютные зоны
+                        отдыха и высококачественные отделочные материалы. Это
+                        идеальное место для тех, кто ищет сочетание роскоши и
+                        уюта в одном из самых престижных районов.
+                      </p>
+                    </div>
+                    <div class="about_card-box">
+                      <div class="about_card-box--circle">
+                        <img
+                          class="about_card-box--img"
+                          src="./img/about-sample.jpg"
+                          alt="Эксперт"
+                        />
+                      </div>
+                      <div class="about_card-box--wrapper">
+                        <p class="about_card-box--name segoe20">Алехандро</p>
+                        <p class="about_card-box--job segoe16-gray">
+                          Эксперт проекта
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about_card-mobile">
+                    <div class="about_card-content">
+                      <p class="about_card-content--title segoe20">
+                        Премиальное жилье в сердце Марбельи
+                      </p>
+                      <p class="about_card-content--text segoe14-white-mobile">
+                        Проект представляет собой вершину элитного жилья в
+                        Марбелье. Предлагает апартаменты с утонченным дизайном
+                        интерьеров, обширными террасами и потрясающими видами.
+                        Каждая деталь продумана: современные крытые и открытые
+                        бассейны, уютные зоны отдыха и только высококачественные
+                        отделочные материалы. Это идеальный выбор для тех, кто
+                        ценит роскошь и комфорт в престижном районе.
+                      </p>
+                    </div>
+                    <div class="about_card-box">
+                      <div class="about_card-box--circle">
+                        <img
+                          class="about_card-box--img"
+                          src="./img/about-sample.jpg"
+                          alt="Эксперт"
+                        />
+                      </div>
+                      <div class="about_card-box--wrapper">
+                        <p class="about_card-box--name segoe-name-mobile">
+                          Алехандро
+                        </p>
+                        <p class="about_card-box--job segoe12-white-mobile">
+                          Эксперт проекта
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container">
+                  <div class="about_card">
+                    <div class="about_card-content">
+                      <p class="about_card-content--title segoe20">
+                        Роскошные апартаменты
+                      </p>
+                      <p class="about_card-content--text segoe16-white">
+                        Проект предлагает уникальное сочетание элегантного
+                        дизайна и комфорта в одном из лучших районов Марбельи.
+                        Жилые пространства характеризуются просторными
+                        планировками, современными интерьерами и панорамными
+                        видами. Важной частью комплекса являются стильные
+                        бассейны и зоны отдыха, создающие атмосферу роскоши и
+                        релаксации. Этот проект идеально подойдет для тех, кто
+                        ищет высококлассное жилье с максимальными удобствами и
+                        продуманной инфраструктурой.
+                      </p>
+                    </div>
+                    <div class="about_card-box">
+                      <div class="about_card-box--circle">
+                        <img
+                          class="about_card-box--img"
+                          src="./img/about-sample.jpg"
+                          alt="Эксперт"
+                        />
+                      </div>
+                      <div class="about_card-box--wrapper">
+                        <p class="about_card-box--name segoe20">Алехандро</p>
+                        <p class="about_card-box--job segoe16-gray">
+                          Эксперт проекта
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about_card-mobile">
+                    <div class="about_card-content">
+                      <p class="about_card-content--title segoe20">
+                        Роскошные аппартаменты
+                      </p>
+                      <p class="about_card-content--text segoe14-white-mobile">
+                        Проект предлагает элегантные апартаменты в престижном
+                        районе Марбельи. Просторные планировки, современные
+                        интерьеры и панорамные виды создают уникальную
+                        атмосферу. Комплекс включает стильные бассейны и зоны
+                        отдыха для роскошного отдыха. Идеален для тех, кто ищет
+                        комфортное и высококлассное жилье с продуманной
+                        инфраструктурой.
+                      </p>
+                    </div>
+                    <div class="about_card-box">
+                      <div class="about_card-box--circle">
+                        <img
+                          class="about_card-box--img"
+                          src="./img/about-sample.jpg"
+                          alt="Эксперт"
+                        />
+                      </div>
+                      <div class="about_card-box--wrapper">
+                        <p class="about_card-box--name segoe-name-mobile">
+                          Алехандро
+                        </p>
+                        <p class="about_card-box--job segoe12-white-mobile">
+                          Эксперт проекта
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-about-button--next"></div>
+            <div class="swiper-button-prev swiper-about-button--prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="plans" id="section-plans">
+        <div class="container">
+          <h3 class="plans_title">Доступные планы проекта</h3>
+          <div class="splide splide_plans">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="plans_card">
+                    <div class="plans_card-box">
+                      <img
+                        loading="lazy"
+                        class="plans_card-img"
+                        src="./img/flat-plan.png"
+                        alt="План Строительства Дома"
+                      />
+                    </div>
+                    <div class="plans_card-content">
+                      <div class="plans_card-descr">
+                        <ul class="plans_card-list">
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">1,090,000 €</p>
+                            <p class="plans_card-text">Стартовая цена</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">130 м2</p>
+                            <p class="plans_card-text">Площадь</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">2</p>
+                            <p class="plans_card-text">Комнаты</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="plans_card-pay">
+                        <p class="plans_card-pay--text">Платежный план</p>
+                        <ul class="plans_card-pay--list">
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              При бронирвании
+                            </p>
+                            <div class="plans_card-pay--line"></div>
+                            <p class="plans_card-pay--p segoe16-black">20%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              В течении строительства
+                            </p>
+                            <div class="plans_card-pay--line-2"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              По завершении строительства
+                            </p>
+                            <div class="plans_card-pay--line-3"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="plans_card">
+                    <div class="plans_card-box">
+                      <img
+                        loading="lazy"
+                        class="plans_card-img"
+                        src="./img/flat-plan.png"
+                        alt="План Строительства Дома"
+                      />
+                    </div>
+                    <div class="plans_card-content">
+                      <div class="plans_card-descr">
+                        <ul class="plans_card-list">
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">1,090,000 €</p>
+                            <p class="plans_card-text">Стартовая цена</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">130 м2</p>
+                            <p class="plans_card-text">Площадь</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">2</p>
+                            <p class="plans_card-text">Комнаты</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="plans_card-pay">
+                        <p class="plans_card-pay--text">Платежный план</p>
+                        <ul class="plans_card-pay--list">
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              При бронирвании
+                            </p>
+                            <div class="plans_card-pay--line"></div>
+                            <p class="plans_card-pay--p segoe16-black">20%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              В течении строительства
+                            </p>
+                            <div class="plans_card-pay--line-2"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              По завершении строительства
+                            </p>
+                            <div class="plans_card-pay--line-3"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="plans_card">
+                    <div class="plans_card-box">
+                      <img
+                        loading="lazy"
+                        class="plans_card-img"
+                        src="./img/flat-plan.png"
+                        alt="План Строительства Дома"
+                      />
+                    </div>
+                    <div class="plans_card-content">
+                      <div class="plans_card-descr">
+                        <ul class="plans_card-list">
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">1,090,000 €</p>
+                            <p class="plans_card-text">Стартовая цена</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">130 м2</p>
+                            <p class="plans_card-text">Площадь</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">2</p>
+                            <p class="plans_card-text">Комнаты</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="plans_card-pay">
+                        <p class="plans_card-pay--text">Платежный план</p>
+                        <ul class="plans_card-pay--list">
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              При бронирвании
+                            </p>
+                            <div class="plans_card-pay--line"></div>
+                            <p class="plans_card-pay--p segoe16-black">20%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              В течении строительства
+                            </p>
+                            <div class="plans_card-pay--line-2"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              По завершении строительства
+                            </p>
+                            <div class="plans_card-pay--line-3"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="my-slider-progress">
+              <div class="my-slider-progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="plans_exclusive" id="section-plans_exclusive">
+        <div class="container">
+          <h3 class="plans_title plans_title-exclusive">
+            Эксклюзивные планы от застройщика
+          </h3>
+          <div class="plans_exclusive-form">
+            <div class="plans_form">
+              <div class="plans_form-content">
+                <p class="plans_form-content--title">
+                  Хотите получить эксклюзивные планы?
+                </p>
+                <p class="plans_form-content--text">
+                  Заполните форму, и наш эксперт свяжется с вами в первую
+                  свободную минуту
+                </p>
+              </div>
+              <div class="plans_form-box">
+                <input
+                  class="plans_form-box--name"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  class="plans_form-box--phone"
+                  type="text"
+                  placeholder="+34 000 000 000"
+                />
+                <button class="plans_form-box--btn" type="submit">
+                  Скачать каталог
+                </button>
+                <button
+                  class="plans_form-box--btn plans_form-box--btn-mobile"
+                  type="submit"
+                >
+                  Заказать звонок
+                </button>
+              </div>
+              <img
+                class="plans_form-diamond"
+                src="./gifs/diamond.gif"
+                alt="Rotating diamond"
+              />
+            </div>
+          </div>
+          <div class="splide splide-exclusive">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="plans_card plans_card-exclusive">
+                    <div class="plans_card-box">
+                      <img
+                        loading="lazy"
+                        class="plans_card-img"
+                        src="./img/flat-plan.png"
+                        alt="План Строительства Дома"
+                      />
+                    </div>
+                    <div class="plans_card-content">
+                      <div class="plans_card-descr">
+                        <ul class="plans_card-list">
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">1,090,000 €</p>
+                            <p class="plans_card-text">Стартовая цена</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">130 м2</p>
+                            <p class="plans_card-text">Площадь</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">2</p>
+                            <p class="plans_card-text">Комнаты</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="plans_card-pay">
+                        <p class="plans_card-pay--text">Платежный план</p>
+                        <ul class="plans_card-pay--list">
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              При бронирвании
+                            </p>
+                            <div class="plans_card-pay--line"></div>
+                            <p class="plans_card-pay--p segoe16-black">20%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              В течении строительства
+                            </p>
+                            <div class="plans_card-pay--line-2"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              По завершении строительства
+                            </p>
+                            <div class="plans_card-pay--line-3"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="plans_card plans_card-exclusive">
+                    <div class="plans_card-box">
+                      <img
+                        loading="lazy"
+                        class="plans_card-img"
+                        src="./img/flat-plan.png"
+                        alt="План Строительства Дома"
+                      />
+                    </div>
+                    <div class="plans_card-content">
+                      <div class="plans_card-descr">
+                        <ul class="plans_card-list">
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">1,090,000 €</p>
+                            <p class="plans_card-text">Стартовая цена</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">130 м2</p>
+                            <p class="plans_card-text">Площадь</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">2</p>
+                            <p class="plans_card-text">Комнаты</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="plans_card-pay">
+                        <p class="plans_card-pay--text">Платежный план</p>
+                        <ul class="plans_card-pay--list">
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              При бронирвании
+                            </p>
+                            <div class="plans_card-pay--line"></div>
+                            <p class="plans_card-pay--p segoe16-black">20%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              В течении строительства
+                            </p>
+                            <div class="plans_card-pay--line-2"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              По завершении строительства
+                            </p>
+                            <div class="plans_card-pay--line-3"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="plans_card plans_card-exclusive">
+                    <div class="plans_card-box">
+                      <img
+                        loading="lazy"
+                        class="plans_card-img"
+                        src="./img/flat-plan.png"
+                        alt="План Строительства Дома"
+                      />
+                    </div>
+                    <div class="plans_card-content">
+                      <div class="plans_card-descr">
+                        <ul class="plans_card-list">
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">1,090,000 €</p>
+                            <p class="plans_card-text">Стартовая цена</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">130 м2</p>
+                            <p class="plans_card-text">Площадь</p>
+                          </li>
+                          <li class="plans_card-item">
+                            <p class="plans_card-title">2</p>
+                            <p class="plans_card-text">Комнаты</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="plans_card-pay">
+                        <p class="plans_card-pay--text">Платежный план</p>
+                        <ul class="plans_card-pay--list">
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              При бронирвании
+                            </p>
+                            <div class="plans_card-pay--line"></div>
+                            <p class="plans_card-pay--p segoe16-black">20%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              В течении строительства
+                            </p>
+                            <div class="plans_card-pay--line-2"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                          <li class="plans_card-pay--item">
+                            <p class="plans_card-pay--p segoe16-black">
+                              По завершении строительства
+                            </p>
+                            <div class="plans_card-pay--line-3"></div>
+                            <p class="plans_card-pay--p segoe16-black">40%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="my-slider-progress">
+              <div class="my-slider-progress-bar-exclusive"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="deals" id="section-deals">
+        <div class="container">
+          <h3 class="deals_title">Выгодно сдавать в аренду</h3>
+          <div class="deals_wrapper">
+            <div class="deals_box">
+              <img
+                loading="lazy"
+                class="deals_box-img"
+                src="./img/deals-croped.png"
+                alt="Дом"
+              />
+              <img
+                loading="lazy"
+                class="deals_box-img deals_box-img-mobile"
+                src="./img/deals-mobile.png"
+                alt="Дом"
+              />
+            </div>
+            <div class="deals_content">
+              <p class="deals_content-text">
+                Проект представляет собой отличную инвестицию для тех, кто
+                рассматривает возможность сдачи жилья в аренду. Роскошные
+                апартаменты с современным дизайном и высококлассной отделкой
+                привлекают арендаторов, ищущих комфорт и стиль. Прекрасные виды,
+                просторные планировки и первоклассные удобства, включая открытые
+                и крытые бассейны, делают эти апартаменты особенно
+                привлекательными для долгосрочной аренды и сезонного проживания.
+                Высокий спрос на жилье в престижном районе Марбельи гарантирует
+                стабильный доход и быструю окупаемость инвестиций. Soul Marbella
+                – это не только идеальное место для жизни, но и выгодный актив
+                для сдачи в аренду.
+              </p>
+              <p class="deals_content-text deals_content-text--mobile">
+                Проект Soul Marbella представляет собой отличную инвестицию для
+                аренды. Роскошные апартаменты с современным дизайном и
+                высококлассной отделкой привлекают арендаторов, ищущих комфорт и
+                стиль. Прекрасные виды, просторные планировки и первоклассные
+                удобства, включая бассейны, делают их особенно привлекательными.
+                Высокий спрос в престижном районе Марбельи гарантирует
+                стабильный доход и быструю окупаемость.
+              </p>
+              <div class="deals_content-wrapper">
+                <p class="deals_content-wrapper--text">
+                  Оставьте заявку, и эксперт проекта свяжется с вами и подберёт
+                  подходящий вариант
+                </p>
+                <button class="deals_content-wrapper--btn" type="button">
+                  Оставить заявку
+                </button>
+                <button class="deals_content-wrapper--btn-mobile" type="button">
+                  Оставить заявку
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="interior" id="section-interior">
+        <div class="container">
+          <div class="interior_box">
+            <h3 class="interior_box-title">Отделка</h3>
+            <p class="interior_box-text">
+              Отделка выполнена на высочайшем уровне, с использованием только
+              премиальных материалов. Просторные и светлые помещения украшены
+              современными элементами декора, создавая элегантную и уютную
+              атмосферу. В интерьерах сочетаются качественные натуральные
+              материалы, такие как мрамор и дерево, с дизайнерской мебелью и
+              стильными аксессуарами, что подчеркивает эксклюзивность и
+              утонченность каждой детали.
+            </p>
+          </div>
+          <div class="interior_tabs">
+            <ul class="interior_tabs-list">
+              <li class="interior_tabs-list--item" id="living-item">
+                <p class="interior_tabs-list--text" id="first-interior-tab">
+                  Гостинная
+                </p>
+              </li>
+              <li class="interior_tabs-list--item" id="kitchen-item">
+                <p class="interior_tabs-list--text">Кухня</p>
+              </li>
+              <li class="interior_tabs-list--item" id="bedroom-item">
+                <p class="interior_tabs-list--text">Спальня</p>
+              </li>
+              <li class="interior_tabs-list--item" id="bathroom-item">
+                <p class="interior_tabs-list--text">Ванная</p>
+              </li>
+            </ul>
+          </div>
+          <div class="interior_wrapper" id="living">
+            <div class="interior_wrapper-box">
+              <img
+                class="interior_wrapper-box--img"
+                src="./img/interior-box1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img"
+                src="./img/interior-box2.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img-mobile"
+                src="./img/interior-mobile1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img-mobile"
+                src="./img/interior-mobile2.png"
+                alt="Интерьер дома"
+              />
+            </div>
+            <div class="interior_wrapper-content">
+              <img
+                class="interior_wrapper-content--img"
+                src="./img/interior-content1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-content--img-mobile"
+                src="./img/interior-mobile3.png"
+                alt="Интерьер дома"
+              />
+              <button
+                class="interior-mobile-vertical"
+                type="button"
+                id="show-vertical-interior"
+              >
+                Показать больше фото
+              </button>
+              <button class="interior-vertical-slider-mobile" type="button">
+                Показать больше фото
+              </button>
+            </div>
+          </div>
+          <div class="interior_wrapper" id="kitchen">
+            <div class="interior_wrapper-box">
+              <img
+                class="interior_wrapper-box--img"
+                src="./img/interior-box2.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img"
+                src="./img/interior-box2.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img-mobile"
+                src="./img/interior-mobile1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img-mobile"
+                src="./img/interior-mobile1.png"
+                alt="Интерьер дома"
+              />
+            </div>
+            <div class="interior_wrapper-content">
+              <img
+                class="interior_wrapper-content--img"
+                src="./img/interior-content1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-content--img-mobile"
+                src="./img/interior-mobile3.png"
+                alt="Интерьер дома"
+              />
+              <button class="interior_wrapper-content--btn" type="button">
+                Показать больше фото
+              </button>
+            </div>
+          </div>
+          <div class="interior_wrapper" id="bedroom">
+            <div class="interior_wrapper-box">
+              <img
+                class="interior_wrapper-box--img"
+                src="./img/interior-box1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img"
+                src="./img/interior-box2.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img-mobile"
+                src="./img/interior-mobile2.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img-mobile"
+                src="./img/interior-mobile2.png"
+                alt="Интерьер дома"
+              />
+            </div>
+            <div class="interior_wrapper-content">
+              <img
+                class="interior_wrapper-content--img"
+                src="./img/interior-content1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-content--img-mobile"
+                src="./img/interior-mobile3.png"
+                alt="Интерьер дома"
+              />
+              <button class="interior_wrapper-content--btn" type="button">
+                Показать больше фото
+              </button>
+            </div>
+          </div>
+          <div class="interior_wrapper" id="bathroom">
+            <div class="interior_wrapper-box">
+              <img
+                class="interior_wrapper-box--img"
+                src="./img/interior-box1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img"
+                src="./img/interior-box1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img-mobile"
+                src="./img/interior-mobile1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-box--img-mobile"
+                src="./img/interior-mobile2.png"
+                alt="Интерьер дома"
+              />
+            </div>
+            <div class="interior_wrapper-content">
+              <img
+                class="interior_wrapper-content--img"
+                src="./img/interior-content1.png"
+                alt="Интерьер дома"
+              />
+              <img
+                class="interior_wrapper-content--img-mobile"
+                src="./img/interior-mobile3.png"
+                alt="Интерьер дома"
+              />
+              <button class="interior_wrapper-content--btn" type="button">
+                Показать больше фото
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="structure" id="section-structure">
+        <div class="container">
+          <h3 class="structure_title">Инфраструктура</h3>
+          <div class="structure_box">
+            <img
+              class="structure_box-img"
+              src="./img/structure-box1.png"
+              alt="Интерьер Дома"
+            />
+            <img
+              class="structure_box-img"
+              src="./img/structure-box2.png"
+              alt="Интерьер Дома"
+            />
+          </div>
+          <div class="structure_content">
+            <img
+              class="structure_content-img"
+              src="./img/structure-content1.png"
+              alt="Интерьер Дома"
+            />
+          </div>
+          <div class="swiper structure-swiper-mobile">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="structure_mobile-img"
+                  src="./img/structure-mobile.png"
+                  alt="Интерьер"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="structure_mobile-img"
+                  src="./img/structure-mobile.png"
+                  alt="Интерьер"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="structure_mobile-img"
+                  src="./img/structure-mobile.png"
+                  alt="Интерьер"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="structure_mobile-img"
+                  src="./img/structure-mobile.png"
+                  alt="Интерьер"
+                />
+              </div>
+            </div>
+            <div class="swiper-scrollbar swiper-scrollbar-structure"></div>
+          </div>
+        </div>
+      </section>
+      <section class="constructor" id="section-constructor">
+        <div class="container">
+          <h3 class="constructor_title">Застройщик</h3>
+          <div class="constructor_wrapper">
+            <p class="constructor_wrapper-text">
+              AEDAS Homes - это ведущий застройщик, специализирующийся на
+              создании высококлассных жилых объектов, сочетающих в себе
+              инновационные технологии и элегантный дизайн. Компания активно
+              придерживается принципов прозрачности, устойчивого развития и
+              высочайших стандартов качества на всех этапах строительства.
+              Каждое жилье от AEDAS Homes отличается превосходной отделкой,
+              вниманием к деталям и использованием передовых строительных
+              технологий. Компания гордится своим профессионализмом,
+              долгосрочным опытом на рынке недвижимости и стремлением
+              удовлетворить все потребности своих клиентов, обеспечивая
+              комфортное и современное жилье в престижных районах.
+            </p>
+            <p
+              class="constructor_wrapper-text constructor_wrapper-text--mobile"
+            >
+              AEDAS Homes — ведущий застройщик высококлассных жилых объектов,
+              сочетающих инновации и элегантный дизайн. Компания придерживается
+              принципов прозрачности, устойчивого развития и высоких стандартов
+              качества. Жилье от AEDAS Homes отличается превосходной отделкой,
+              вниманием к деталям и передовыми строительными технологиями.
+              Kомпания обеспечивает комфортное и современное жилье в престижных
+              районах, удовлетворяя потребности своих клиентов.
+            </p>
+            <img
+              class="constructor_wrapper-img"
+              src="./img/constructor-img.png"
+              alt="Интерьер дома"
+            />
+            <img
+              class="constructor_wrapper-img-mobile"
+              src="./img/constructor-mobile.png"
+              alt="Интерьер дома"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="area" id="section-area">
+        <div class="container">
+          <div class="area_box">
+            <h3 class="area_box-title">О районе</h3>
+            <div class="area_box-wrapper">
+              <p class="area_box-wrapper--title">
+                Марбелья: Жемчужина Коста-дель-Соль
+              </p>
+              <p class="area_box-wrapper--text">
+                Марбелья — это один из самых престижных и популярных курортов на
+                южном побережье Испании, в регионе Коста-дель-Соль. Известный
+                своим мягким климатом, великолепными пляжами и роскошными
+                курортами, этот город привлекает туристов со всего мира.
+                Марбелья славится своей богатой историей, утончённой
+                архитектурой и великолепными видами на Средиземное море.
+              </p>
+              <p class="area_box-wrapper--text area_box-wrapper--text-mobile">
+                Марбелья — престижный курорт на южном побережье Испании, в
+                регионе Коста-дель-Соль. С мягким климатом, прекрасными пляжами
+                и роскошными курортами, город привлекает туристов со всего мира.
+                Марбелья известна своей богатой историей, утончённой
+                архитектурой и великолепными видами на Средиземное море.
+              </p>
+            </div>
+          </div>
+          <div class="area_content">
+            <div class="area_content-view">
+              <img
+                class="area_content-view--img"
+                src="./img/area-view1.png"
+                alt="Вид Райнона"
+              />
+              <img
+                class="area_content-view--img"
+                src="./img/area-view2.png"
+                alt="Вид Райнона"
+              />
+              <img
+                class="area_content-view-mobile"
+                src="./img/area-mobile.png"
+                alt="Вид Райнона"
+              />
+            </div>
+            <div class="area_content-descr">
+              <img
+                class="area_content-descr--img"
+                src="./img/area-content1.png"
+                alt="Вид Райнона"
+              />
+              <div class="area_content-wrapper">
+                <p class="area_content-wrapper--text">
+                  Город предлагает разнообразные развлечения: от элитных
+                  гольф-клубов и изысканных ресторанов до эксклюзивных бутиков и
+                  оживлённой ночной жизни. Старый город Марбельи, с его узкими
+                  улочками и белоснежными домами, создает особую атмосферу,
+                  которая очаровывает каждого посетителя. Прогулка по набережной
+                  Пуэрто Банус позволяет насладиться видом на роскошные яхты и
+                  познакомиться с модной публикой.
+                </p>
+                <p class="area_content-wrapper--text">
+                  Марбелья также славится своими культурными мероприятиями и
+                  фестивалями, которые проводятся круглый год. Этот город
+                  является идеальным местом для тех, кто ищет сочетание роскоши,
+                  культуры и природы в одном из самых красивых уголков Испании.
+                </p>
+                <button
+                  class="interior_wrapper-content--btn area_content-mobile--btn"
+                  id="hide-on-mobile-vertical-btn"
+                  type="button"
+                >
+                  Узнать больше
+                </button>
+                <button class="area-vertical-show" type="button">
+                  Узнать больше
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="location" id="section-location">
+        <div class="container">
+          <div class="location_wrapper">
+            <h3 class="location_wrapper-title">Расположение</h3>
+            <ul class="location_wrapper-list">
+              <li class="location_wrapper-list--item">
+                <div class="location_box">
+                  <span class="location_box-car"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.58395 15.7546H4.34358C4.8207 15.7546 5.19109 15.3842 5.19109 14.9071V13.8838C6.57223 13.9654 8.4556 14.0156 9.99997 14.0156C11.5381 14.0156 13.4214 13.9654 14.8026 13.8838V14.9071C14.8026 15.3842 15.173 15.7546 15.6564 15.7546H16.4097C16.8931 15.7546 17.2635 15.3842 17.2635 14.9071V13.256C17.4707 13.0112 17.5837 12.6847 17.5837 12.2829V11.178C17.5837 10.0731 17.3891 9.45159 16.7927 8.69824L16.2339 7.99512C16.0016 6.86509 15.5873 5.67857 15.3676 5.21401C15.016 4.47321 14.338 4.03376 13.4716 3.91448C13.0134 3.8517 11.6699 3.82031 9.99997 3.82031C8.33004 3.82031 6.98029 3.85798 6.52829 3.91448C5.66194 4.02121 4.97764 4.47321 4.63236 5.21401C4.41263 5.67857 3.99829 6.86509 3.76601 7.99512L3.20728 8.69824C2.61087 9.45159 2.41626 10.0731 2.41626 11.178V12.2829C2.41626 12.6847 2.52926 13.0112 2.73643 13.256V14.9071C2.73643 15.3842 3.10683 15.7546 3.58395 15.7546ZM9.99997 12.9986C7.84664 12.9986 5.17226 12.8982 4.15524 12.7789C3.61534 12.7161 3.41445 12.4399 3.41445 11.9628V11.1215C3.41445 10.274 3.57767 9.87221 4.01712 9.28836L4.69514 8.40318C4.85209 7.56194 5.26015 6.25614 5.51754 5.6974C5.73099 5.25167 6.13278 4.99428 6.67896 4.92522C7.11213 4.86872 8.33632 4.8185 9.99997 4.8185C11.6636 4.8185 12.9066 4.875 13.3084 4.92522C13.8734 4.99428 14.2627 5.25795 14.4761 5.70368C14.7461 6.24986 15.1416 7.54939 15.2985 8.40318L15.9765 9.28836C16.4223 9.87221 16.5792 10.274 16.5792 11.1215V11.9628C16.5792 12.4399 16.3783 12.7161 15.8447 12.7789C14.8277 12.8982 12.1533 12.9986 9.99997 12.9986ZM5.54893 7.77539C5.48615 8.03278 5.59916 8.15206 5.86911 8.13951C6.79196 8.08301 7.95337 8.02651 9.99997 8.02651C12.0466 8.02651 13.208 8.08301 14.1245 8.13951C14.4008 8.15206 14.5075 8.03278 14.451 7.77539C14.3129 7.17271 14.0555 6.3817 13.8734 6.0678C13.6976 5.75391 13.4968 5.62207 13.1264 5.57185C12.6995 5.51535 11.6762 5.4714 9.99997 5.4714C8.32377 5.4714 7.29419 5.51535 6.87357 5.57185C6.50317 5.62207 6.296 5.75391 6.1265 6.0678C5.94444 6.3817 5.68705 7.17271 5.54893 7.77539ZM5.45476 12.1888C6.05744 12.1888 6.50945 11.7367 6.50945 11.1403C6.50945 10.5377 6.05744 10.0857 5.45476 10.0857C4.85836 10.0857 4.40635 10.5377 4.40635 11.1403C4.40635 11.7367 4.85836 12.1888 5.45476 12.1888ZM14.5389 12.1888C15.1416 12.1888 15.5936 11.7367 15.5936 11.1403C15.5936 10.5377 15.1416 10.0857 14.5389 10.0857C13.9425 10.0857 13.4905 10.5377 13.4905 11.1403C13.4905 11.7367 13.9425 12.1888 14.5389 12.1888ZM8.30493 11.9251H11.695C12.1407 11.9251 12.4546 11.6112 12.4546 11.1655C12.4546 10.7197 12.1407 10.4058 11.695 10.4058H8.30493C7.85292 10.4058 7.53903 10.7197 7.53903 11.1655C7.53903 11.6112 7.85292 11.9251 8.30493 11.9251Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <span class="location_box-human">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.97484 4.74972C10.8098 4.74972 11.4878 4.05915 11.4878 3.25558C11.4878 2.41434 10.8098 1.73633 9.97484 1.73633C9.13987 1.73633 8.4807 2.41434 8.4807 3.25558C8.4807 4.05915 9.13987 4.74972 9.97484 4.74972ZM12.1156 16.7091C12.4734 16.7091 12.7936 16.4455 12.7936 16.006C12.7936 15.8428 12.7497 15.6921 12.6618 15.5163L11.3183 12.7917C11.199 12.5469 11.0609 12.3271 10.9354 12.1514L10.1129 10.9837L10.1632 10.8267C10.3892 10.1048 10.4771 9.66532 10.5273 8.97475L10.6654 7.03488C10.7345 6.08064 10.182 5.30218 9.18382 5.30218C8.45558 5.30218 7.92824 5.69768 7.25023 6.35686L6.22065 7.38016C5.86909 7.72545 5.75609 8.00795 5.7247 8.4474L5.59286 10.042C5.56147 10.4752 5.80631 10.7577 6.19554 10.7828C6.56594 10.8079 6.84216 10.5882 6.88611 10.1236L7.0305 8.37835L7.63946 7.83845C7.75246 7.738 7.91568 7.7945 7.90313 7.96401L7.79013 9.53348C7.73362 10.2931 8.06635 10.8456 8.44303 11.3164L9.7865 13.0052C9.91833 13.1684 9.93717 13.2312 9.99995 13.3504L11.4313 16.2571C11.6008 16.5961 11.8519 16.7091 12.1156 16.7091ZM12.4107 9.29492H13.9299C14.3694 9.29492 14.6456 9.03753 14.6456 8.6483C14.6456 8.25907 14.3631 8.00167 13.9236 8.00167H12.3353L11.2304 6.80259L11.1111 8.52902L11.582 8.99986C11.808 9.22586 12.0214 9.29492 12.4107 9.29492ZM6.02604 16.7091C6.24576 16.7091 6.44038 16.6087 6.57849 16.4455L8.59998 14.041C8.80715 13.7899 8.83226 13.7271 8.92015 13.4823C8.97037 13.3191 9.01432 13.1621 9.05198 13.0114L7.89685 11.5675L7.55784 13.1433L5.64308 15.4159C5.4673 15.6168 5.34802 15.7925 5.34802 16.0437C5.34802 16.4329 5.64308 16.7091 6.02604 16.7091Z"
+                        fill="#302F37"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p class="location_wrapper-list--text">Школа, 7 минут</p>
+              </li>
+              <li class="location_wrapper-list--item">
+                <div class="location_box">
+                  <span class="location_box-car"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.58395 15.7546H4.34358C4.8207 15.7546 5.19109 15.3842 5.19109 14.9071V13.8838C6.57223 13.9654 8.4556 14.0156 9.99997 14.0156C11.5381 14.0156 13.4214 13.9654 14.8026 13.8838V14.9071C14.8026 15.3842 15.173 15.7546 15.6564 15.7546H16.4097C16.8931 15.7546 17.2635 15.3842 17.2635 14.9071V13.256C17.4707 13.0112 17.5837 12.6847 17.5837 12.2829V11.178C17.5837 10.0731 17.3891 9.45159 16.7927 8.69824L16.2339 7.99512C16.0016 6.86509 15.5873 5.67857 15.3676 5.21401C15.016 4.47321 14.338 4.03376 13.4716 3.91448C13.0134 3.8517 11.6699 3.82031 9.99997 3.82031C8.33004 3.82031 6.98029 3.85798 6.52829 3.91448C5.66194 4.02121 4.97764 4.47321 4.63236 5.21401C4.41263 5.67857 3.99829 6.86509 3.76601 7.99512L3.20728 8.69824C2.61087 9.45159 2.41626 10.0731 2.41626 11.178V12.2829C2.41626 12.6847 2.52926 13.0112 2.73643 13.256V14.9071C2.73643 15.3842 3.10683 15.7546 3.58395 15.7546ZM9.99997 12.9986C7.84664 12.9986 5.17226 12.8982 4.15524 12.7789C3.61534 12.7161 3.41445 12.4399 3.41445 11.9628V11.1215C3.41445 10.274 3.57767 9.87221 4.01712 9.28836L4.69514 8.40318C4.85209 7.56194 5.26015 6.25614 5.51754 5.6974C5.73099 5.25167 6.13278 4.99428 6.67896 4.92522C7.11213 4.86872 8.33632 4.8185 9.99997 4.8185C11.6636 4.8185 12.9066 4.875 13.3084 4.92522C13.8734 4.99428 14.2627 5.25795 14.4761 5.70368C14.7461 6.24986 15.1416 7.54939 15.2985 8.40318L15.9765 9.28836C16.4223 9.87221 16.5792 10.274 16.5792 11.1215V11.9628C16.5792 12.4399 16.3783 12.7161 15.8447 12.7789C14.8277 12.8982 12.1533 12.9986 9.99997 12.9986ZM5.54893 7.77539C5.48615 8.03278 5.59916 8.15206 5.86911 8.13951C6.79196 8.08301 7.95337 8.02651 9.99997 8.02651C12.0466 8.02651 13.208 8.08301 14.1245 8.13951C14.4008 8.15206 14.5075 8.03278 14.451 7.77539C14.3129 7.17271 14.0555 6.3817 13.8734 6.0678C13.6976 5.75391 13.4968 5.62207 13.1264 5.57185C12.6995 5.51535 11.6762 5.4714 9.99997 5.4714C8.32377 5.4714 7.29419 5.51535 6.87357 5.57185C6.50317 5.62207 6.296 5.75391 6.1265 6.0678C5.94444 6.3817 5.68705 7.17271 5.54893 7.77539ZM5.45476 12.1888C6.05744 12.1888 6.50945 11.7367 6.50945 11.1403C6.50945 10.5377 6.05744 10.0857 5.45476 10.0857C4.85836 10.0857 4.40635 10.5377 4.40635 11.1403C4.40635 11.7367 4.85836 12.1888 5.45476 12.1888ZM14.5389 12.1888C15.1416 12.1888 15.5936 11.7367 15.5936 11.1403C15.5936 10.5377 15.1416 10.0857 14.5389 10.0857C13.9425 10.0857 13.4905 10.5377 13.4905 11.1403C13.4905 11.7367 13.9425 12.1888 14.5389 12.1888ZM8.30493 11.9251H11.695C12.1407 11.9251 12.4546 11.6112 12.4546 11.1655C12.4546 10.7197 12.1407 10.4058 11.695 10.4058H8.30493C7.85292 10.4058 7.53903 10.7197 7.53903 11.1655C7.53903 11.6112 7.85292 11.9251 8.30493 11.9251Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <span class="location_box-human">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.97484 4.74972C10.8098 4.74972 11.4878 4.05915 11.4878 3.25558C11.4878 2.41434 10.8098 1.73633 9.97484 1.73633C9.13987 1.73633 8.4807 2.41434 8.4807 3.25558C8.4807 4.05915 9.13987 4.74972 9.97484 4.74972ZM12.1156 16.7091C12.4734 16.7091 12.7936 16.4455 12.7936 16.006C12.7936 15.8428 12.7497 15.6921 12.6618 15.5163L11.3183 12.7917C11.199 12.5469 11.0609 12.3271 10.9354 12.1514L10.1129 10.9837L10.1632 10.8267C10.3892 10.1048 10.4771 9.66532 10.5273 8.97475L10.6654 7.03488C10.7345 6.08064 10.182 5.30218 9.18382 5.30218C8.45558 5.30218 7.92824 5.69768 7.25023 6.35686L6.22065 7.38016C5.86909 7.72545 5.75609 8.00795 5.7247 8.4474L5.59286 10.042C5.56147 10.4752 5.80631 10.7577 6.19554 10.7828C6.56594 10.8079 6.84216 10.5882 6.88611 10.1236L7.0305 8.37835L7.63946 7.83845C7.75246 7.738 7.91568 7.7945 7.90313 7.96401L7.79013 9.53348C7.73362 10.2931 8.06635 10.8456 8.44303 11.3164L9.7865 13.0052C9.91833 13.1684 9.93717 13.2312 9.99995 13.3504L11.4313 16.2571C11.6008 16.5961 11.8519 16.7091 12.1156 16.7091ZM12.4107 9.29492H13.9299C14.3694 9.29492 14.6456 9.03753 14.6456 8.6483C14.6456 8.25907 14.3631 8.00167 13.9236 8.00167H12.3353L11.2304 6.80259L11.1111 8.52902L11.582 8.99986C11.808 9.22586 12.0214 9.29492 12.4107 9.29492ZM6.02604 16.7091C6.24576 16.7091 6.44038 16.6087 6.57849 16.4455L8.59998 14.041C8.80715 13.7899 8.83226 13.7271 8.92015 13.4823C8.97037 13.3191 9.01432 13.1621 9.05198 13.0114L7.89685 11.5675L7.55784 13.1433L5.64308 15.4159C5.4673 15.6168 5.34802 15.7925 5.34802 16.0437C5.34802 16.4329 5.64308 16.7091 6.02604 16.7091Z"
+                        fill="#302F37"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p class="location_wrapper-list--text">Пляж, 10 минут</p>
+              </li>
+              <li class="location_wrapper-list--item">
+                <div class="location_box">
+                  <span class="location_box-car"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.58395 15.7546H4.34358C4.8207 15.7546 5.19109 15.3842 5.19109 14.9071V13.8838C6.57223 13.9654 8.4556 14.0156 9.99997 14.0156C11.5381 14.0156 13.4214 13.9654 14.8026 13.8838V14.9071C14.8026 15.3842 15.173 15.7546 15.6564 15.7546H16.4097C16.8931 15.7546 17.2635 15.3842 17.2635 14.9071V13.256C17.4707 13.0112 17.5837 12.6847 17.5837 12.2829V11.178C17.5837 10.0731 17.3891 9.45159 16.7927 8.69824L16.2339 7.99512C16.0016 6.86509 15.5873 5.67857 15.3676 5.21401C15.016 4.47321 14.338 4.03376 13.4716 3.91448C13.0134 3.8517 11.6699 3.82031 9.99997 3.82031C8.33004 3.82031 6.98029 3.85798 6.52829 3.91448C5.66194 4.02121 4.97764 4.47321 4.63236 5.21401C4.41263 5.67857 3.99829 6.86509 3.76601 7.99512L3.20728 8.69824C2.61087 9.45159 2.41626 10.0731 2.41626 11.178V12.2829C2.41626 12.6847 2.52926 13.0112 2.73643 13.256V14.9071C2.73643 15.3842 3.10683 15.7546 3.58395 15.7546ZM9.99997 12.9986C7.84664 12.9986 5.17226 12.8982 4.15524 12.7789C3.61534 12.7161 3.41445 12.4399 3.41445 11.9628V11.1215C3.41445 10.274 3.57767 9.87221 4.01712 9.28836L4.69514 8.40318C4.85209 7.56194 5.26015 6.25614 5.51754 5.6974C5.73099 5.25167 6.13278 4.99428 6.67896 4.92522C7.11213 4.86872 8.33632 4.8185 9.99997 4.8185C11.6636 4.8185 12.9066 4.875 13.3084 4.92522C13.8734 4.99428 14.2627 5.25795 14.4761 5.70368C14.7461 6.24986 15.1416 7.54939 15.2985 8.40318L15.9765 9.28836C16.4223 9.87221 16.5792 10.274 16.5792 11.1215V11.9628C16.5792 12.4399 16.3783 12.7161 15.8447 12.7789C14.8277 12.8982 12.1533 12.9986 9.99997 12.9986ZM5.54893 7.77539C5.48615 8.03278 5.59916 8.15206 5.86911 8.13951C6.79196 8.08301 7.95337 8.02651 9.99997 8.02651C12.0466 8.02651 13.208 8.08301 14.1245 8.13951C14.4008 8.15206 14.5075 8.03278 14.451 7.77539C14.3129 7.17271 14.0555 6.3817 13.8734 6.0678C13.6976 5.75391 13.4968 5.62207 13.1264 5.57185C12.6995 5.51535 11.6762 5.4714 9.99997 5.4714C8.32377 5.4714 7.29419 5.51535 6.87357 5.57185C6.50317 5.62207 6.296 5.75391 6.1265 6.0678C5.94444 6.3817 5.68705 7.17271 5.54893 7.77539ZM5.45476 12.1888C6.05744 12.1888 6.50945 11.7367 6.50945 11.1403C6.50945 10.5377 6.05744 10.0857 5.45476 10.0857C4.85836 10.0857 4.40635 10.5377 4.40635 11.1403C4.40635 11.7367 4.85836 12.1888 5.45476 12.1888ZM14.5389 12.1888C15.1416 12.1888 15.5936 11.7367 15.5936 11.1403C15.5936 10.5377 15.1416 10.0857 14.5389 10.0857C13.9425 10.0857 13.4905 10.5377 13.4905 11.1403C13.4905 11.7367 13.9425 12.1888 14.5389 12.1888ZM8.30493 11.9251H11.695C12.1407 11.9251 12.4546 11.6112 12.4546 11.1655C12.4546 10.7197 12.1407 10.4058 11.695 10.4058H8.30493C7.85292 10.4058 7.53903 10.7197 7.53903 11.1655C7.53903 11.6112 7.85292 11.9251 8.30493 11.9251Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <span class="location_box-human">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.97484 4.74972C10.8098 4.74972 11.4878 4.05915 11.4878 3.25558C11.4878 2.41434 10.8098 1.73633 9.97484 1.73633C9.13987 1.73633 8.4807 2.41434 8.4807 3.25558C8.4807 4.05915 9.13987 4.74972 9.97484 4.74972ZM12.1156 16.7091C12.4734 16.7091 12.7936 16.4455 12.7936 16.006C12.7936 15.8428 12.7497 15.6921 12.6618 15.5163L11.3183 12.7917C11.199 12.5469 11.0609 12.3271 10.9354 12.1514L10.1129 10.9837L10.1632 10.8267C10.3892 10.1048 10.4771 9.66532 10.5273 8.97475L10.6654 7.03488C10.7345 6.08064 10.182 5.30218 9.18382 5.30218C8.45558 5.30218 7.92824 5.69768 7.25023 6.35686L6.22065 7.38016C5.86909 7.72545 5.75609 8.00795 5.7247 8.4474L5.59286 10.042C5.56147 10.4752 5.80631 10.7577 6.19554 10.7828C6.56594 10.8079 6.84216 10.5882 6.88611 10.1236L7.0305 8.37835L7.63946 7.83845C7.75246 7.738 7.91568 7.7945 7.90313 7.96401L7.79013 9.53348C7.73362 10.2931 8.06635 10.8456 8.44303 11.3164L9.7865 13.0052C9.91833 13.1684 9.93717 13.2312 9.99995 13.3504L11.4313 16.2571C11.6008 16.5961 11.8519 16.7091 12.1156 16.7091ZM12.4107 9.29492H13.9299C14.3694 9.29492 14.6456 9.03753 14.6456 8.6483C14.6456 8.25907 14.3631 8.00167 13.9236 8.00167H12.3353L11.2304 6.80259L11.1111 8.52902L11.582 8.99986C11.808 9.22586 12.0214 9.29492 12.4107 9.29492ZM6.02604 16.7091C6.24576 16.7091 6.44038 16.6087 6.57849 16.4455L8.59998 14.041C8.80715 13.7899 8.83226 13.7271 8.92015 13.4823C8.97037 13.3191 9.01432 13.1621 9.05198 13.0114L7.89685 11.5675L7.55784 13.1433L5.64308 15.4159C5.4673 15.6168 5.34802 15.7925 5.34802 16.0437C5.34802 16.4329 5.64308 16.7091 6.02604 16.7091Z"
+                        fill="#302F37"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p class="location_wrapper-list--text">Маркет, 5 минут</p>
+              </li>
+            </ul>
+          </div>
+          <div class="location_map"><div id="map"></div></div>
+          <ul class="location_wrapper-list location_wrapper-list-mobile">
+            <li
+              class="location_wrapper-list--item location_wrapper-list--item-mobile"
+            >
+              <div class="location_box location_box-mobile">
+                <span class="location_box-car location_box-car-mobile"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.58395 15.7546H4.34358C4.8207 15.7546 5.19109 15.3842 5.19109 14.9071V13.8838C6.57223 13.9654 8.4556 14.0156 9.99997 14.0156C11.5381 14.0156 13.4214 13.9654 14.8026 13.8838V14.9071C14.8026 15.3842 15.173 15.7546 15.6564 15.7546H16.4097C16.8931 15.7546 17.2635 15.3842 17.2635 14.9071V13.256C17.4707 13.0112 17.5837 12.6847 17.5837 12.2829V11.178C17.5837 10.0731 17.3891 9.45159 16.7927 8.69824L16.2339 7.99512C16.0016 6.86509 15.5873 5.67857 15.3676 5.21401C15.016 4.47321 14.338 4.03376 13.4716 3.91448C13.0134 3.8517 11.6699 3.82031 9.99997 3.82031C8.33004 3.82031 6.98029 3.85798 6.52829 3.91448C5.66194 4.02121 4.97764 4.47321 4.63236 5.21401C4.41263 5.67857 3.99829 6.86509 3.76601 7.99512L3.20728 8.69824C2.61087 9.45159 2.41626 10.0731 2.41626 11.178V12.2829C2.41626 12.6847 2.52926 13.0112 2.73643 13.256V14.9071C2.73643 15.3842 3.10683 15.7546 3.58395 15.7546ZM9.99997 12.9986C7.84664 12.9986 5.17226 12.8982 4.15524 12.7789C3.61534 12.7161 3.41445 12.4399 3.41445 11.9628V11.1215C3.41445 10.274 3.57767 9.87221 4.01712 9.28836L4.69514 8.40318C4.85209 7.56194 5.26015 6.25614 5.51754 5.6974C5.73099 5.25167 6.13278 4.99428 6.67896 4.92522C7.11213 4.86872 8.33632 4.8185 9.99997 4.8185C11.6636 4.8185 12.9066 4.875 13.3084 4.92522C13.8734 4.99428 14.2627 5.25795 14.4761 5.70368C14.7461 6.24986 15.1416 7.54939 15.2985 8.40318L15.9765 9.28836C16.4223 9.87221 16.5792 10.274 16.5792 11.1215V11.9628C16.5792 12.4399 16.3783 12.7161 15.8447 12.7789C14.8277 12.8982 12.1533 12.9986 9.99997 12.9986ZM5.54893 7.77539C5.48615 8.03278 5.59916 8.15206 5.86911 8.13951C6.79196 8.08301 7.95337 8.02651 9.99997 8.02651C12.0466 8.02651 13.208 8.08301 14.1245 8.13951C14.4008 8.15206 14.5075 8.03278 14.451 7.77539C14.3129 7.17271 14.0555 6.3817 13.8734 6.0678C13.6976 5.75391 13.4968 5.62207 13.1264 5.57185C12.6995 5.51535 11.6762 5.4714 9.99997 5.4714C8.32377 5.4714 7.29419 5.51535 6.87357 5.57185C6.50317 5.62207 6.296 5.75391 6.1265 6.0678C5.94444 6.3817 5.68705 7.17271 5.54893 7.77539ZM5.45476 12.1888C6.05744 12.1888 6.50945 11.7367 6.50945 11.1403C6.50945 10.5377 6.05744 10.0857 5.45476 10.0857C4.85836 10.0857 4.40635 10.5377 4.40635 11.1403C4.40635 11.7367 4.85836 12.1888 5.45476 12.1888ZM14.5389 12.1888C15.1416 12.1888 15.5936 11.7367 15.5936 11.1403C15.5936 10.5377 15.1416 10.0857 14.5389 10.0857C13.9425 10.0857 13.4905 10.5377 13.4905 11.1403C13.4905 11.7367 13.9425 12.1888 14.5389 12.1888ZM8.30493 11.9251H11.695C12.1407 11.9251 12.4546 11.6112 12.4546 11.1655C12.4546 10.7197 12.1407 10.4058 11.695 10.4058H8.30493C7.85292 10.4058 7.53903 10.7197 7.53903 11.1655C7.53903 11.6112 7.85292 11.9251 8.30493 11.9251Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <span class="location_box-human location_box-human-mobile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.97484 4.74972C10.8098 4.74972 11.4878 4.05915 11.4878 3.25558C11.4878 2.41434 10.8098 1.73633 9.97484 1.73633C9.13987 1.73633 8.4807 2.41434 8.4807 3.25558C8.4807 4.05915 9.13987 4.74972 9.97484 4.74972ZM12.1156 16.7091C12.4734 16.7091 12.7936 16.4455 12.7936 16.006C12.7936 15.8428 12.7497 15.6921 12.6618 15.5163L11.3183 12.7917C11.199 12.5469 11.0609 12.3271 10.9354 12.1514L10.1129 10.9837L10.1632 10.8267C10.3892 10.1048 10.4771 9.66532 10.5273 8.97475L10.6654 7.03488C10.7345 6.08064 10.182 5.30218 9.18382 5.30218C8.45558 5.30218 7.92824 5.69768 7.25023 6.35686L6.22065 7.38016C5.86909 7.72545 5.75609 8.00795 5.7247 8.4474L5.59286 10.042C5.56147 10.4752 5.80631 10.7577 6.19554 10.7828C6.56594 10.8079 6.84216 10.5882 6.88611 10.1236L7.0305 8.37835L7.63946 7.83845C7.75246 7.738 7.91568 7.7945 7.90313 7.96401L7.79013 9.53348C7.73362 10.2931 8.06635 10.8456 8.44303 11.3164L9.7865 13.0052C9.91833 13.1684 9.93717 13.2312 9.99995 13.3504L11.4313 16.2571C11.6008 16.5961 11.8519 16.7091 12.1156 16.7091ZM12.4107 9.29492H13.9299C14.3694 9.29492 14.6456 9.03753 14.6456 8.6483C14.6456 8.25907 14.3631 8.00167 13.9236 8.00167H12.3353L11.2304 6.80259L11.1111 8.52902L11.582 8.99986C11.808 9.22586 12.0214 9.29492 12.4107 9.29492ZM6.02604 16.7091C6.24576 16.7091 6.44038 16.6087 6.57849 16.4455L8.59998 14.041C8.80715 13.7899 8.83226 13.7271 8.92015 13.4823C8.97037 13.3191 9.01432 13.1621 9.05198 13.0114L7.89685 11.5675L7.55784 13.1433L5.64308 15.4159C5.4673 15.6168 5.34802 15.7925 5.34802 16.0437C5.34802 16.4329 5.64308 16.7091 6.02604 16.7091Z"
+                      fill="#302F37"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <p class="location_wrapper-list--text">Школа, 7 минут</p>
+              <div class="location_box-cover">
+                <p class="location_box-cover--black">Школа</p>
+                <p class="location_box-cover--gray">7 минут</p>
+              </div>
+            </li>
+            <li
+              class="location_wrapper-list--item location_wrapper-list--item-mobile"
+            >
+              <div class="location_box location_box-mobile">
+                <span class="location_box-car location_box-car-mobile"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.58395 15.7546H4.34358C4.8207 15.7546 5.19109 15.3842 5.19109 14.9071V13.8838C6.57223 13.9654 8.4556 14.0156 9.99997 14.0156C11.5381 14.0156 13.4214 13.9654 14.8026 13.8838V14.9071C14.8026 15.3842 15.173 15.7546 15.6564 15.7546H16.4097C16.8931 15.7546 17.2635 15.3842 17.2635 14.9071V13.256C17.4707 13.0112 17.5837 12.6847 17.5837 12.2829V11.178C17.5837 10.0731 17.3891 9.45159 16.7927 8.69824L16.2339 7.99512C16.0016 6.86509 15.5873 5.67857 15.3676 5.21401C15.016 4.47321 14.338 4.03376 13.4716 3.91448C13.0134 3.8517 11.6699 3.82031 9.99997 3.82031C8.33004 3.82031 6.98029 3.85798 6.52829 3.91448C5.66194 4.02121 4.97764 4.47321 4.63236 5.21401C4.41263 5.67857 3.99829 6.86509 3.76601 7.99512L3.20728 8.69824C2.61087 9.45159 2.41626 10.0731 2.41626 11.178V12.2829C2.41626 12.6847 2.52926 13.0112 2.73643 13.256V14.9071C2.73643 15.3842 3.10683 15.7546 3.58395 15.7546ZM9.99997 12.9986C7.84664 12.9986 5.17226 12.8982 4.15524 12.7789C3.61534 12.7161 3.41445 12.4399 3.41445 11.9628V11.1215C3.41445 10.274 3.57767 9.87221 4.01712 9.28836L4.69514 8.40318C4.85209 7.56194 5.26015 6.25614 5.51754 5.6974C5.73099 5.25167 6.13278 4.99428 6.67896 4.92522C7.11213 4.86872 8.33632 4.8185 9.99997 4.8185C11.6636 4.8185 12.9066 4.875 13.3084 4.92522C13.8734 4.99428 14.2627 5.25795 14.4761 5.70368C14.7461 6.24986 15.1416 7.54939 15.2985 8.40318L15.9765 9.28836C16.4223 9.87221 16.5792 10.274 16.5792 11.1215V11.9628C16.5792 12.4399 16.3783 12.7161 15.8447 12.7789C14.8277 12.8982 12.1533 12.9986 9.99997 12.9986ZM5.54893 7.77539C5.48615 8.03278 5.59916 8.15206 5.86911 8.13951C6.79196 8.08301 7.95337 8.02651 9.99997 8.02651C12.0466 8.02651 13.208 8.08301 14.1245 8.13951C14.4008 8.15206 14.5075 8.03278 14.451 7.77539C14.3129 7.17271 14.0555 6.3817 13.8734 6.0678C13.6976 5.75391 13.4968 5.62207 13.1264 5.57185C12.6995 5.51535 11.6762 5.4714 9.99997 5.4714C8.32377 5.4714 7.29419 5.51535 6.87357 5.57185C6.50317 5.62207 6.296 5.75391 6.1265 6.0678C5.94444 6.3817 5.68705 7.17271 5.54893 7.77539ZM5.45476 12.1888C6.05744 12.1888 6.50945 11.7367 6.50945 11.1403C6.50945 10.5377 6.05744 10.0857 5.45476 10.0857C4.85836 10.0857 4.40635 10.5377 4.40635 11.1403C4.40635 11.7367 4.85836 12.1888 5.45476 12.1888ZM14.5389 12.1888C15.1416 12.1888 15.5936 11.7367 15.5936 11.1403C15.5936 10.5377 15.1416 10.0857 14.5389 10.0857C13.9425 10.0857 13.4905 10.5377 13.4905 11.1403C13.4905 11.7367 13.9425 12.1888 14.5389 12.1888ZM8.30493 11.9251H11.695C12.1407 11.9251 12.4546 11.6112 12.4546 11.1655C12.4546 10.7197 12.1407 10.4058 11.695 10.4058H8.30493C7.85292 10.4058 7.53903 10.7197 7.53903 11.1655C7.53903 11.6112 7.85292 11.9251 8.30493 11.9251Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <span class="location_box-human location_box-human-mobile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.97484 4.74972C10.8098 4.74972 11.4878 4.05915 11.4878 3.25558C11.4878 2.41434 10.8098 1.73633 9.97484 1.73633C9.13987 1.73633 8.4807 2.41434 8.4807 3.25558C8.4807 4.05915 9.13987 4.74972 9.97484 4.74972ZM12.1156 16.7091C12.4734 16.7091 12.7936 16.4455 12.7936 16.006C12.7936 15.8428 12.7497 15.6921 12.6618 15.5163L11.3183 12.7917C11.199 12.5469 11.0609 12.3271 10.9354 12.1514L10.1129 10.9837L10.1632 10.8267C10.3892 10.1048 10.4771 9.66532 10.5273 8.97475L10.6654 7.03488C10.7345 6.08064 10.182 5.30218 9.18382 5.30218C8.45558 5.30218 7.92824 5.69768 7.25023 6.35686L6.22065 7.38016C5.86909 7.72545 5.75609 8.00795 5.7247 8.4474L5.59286 10.042C5.56147 10.4752 5.80631 10.7577 6.19554 10.7828C6.56594 10.8079 6.84216 10.5882 6.88611 10.1236L7.0305 8.37835L7.63946 7.83845C7.75246 7.738 7.91568 7.7945 7.90313 7.96401L7.79013 9.53348C7.73362 10.2931 8.06635 10.8456 8.44303 11.3164L9.7865 13.0052C9.91833 13.1684 9.93717 13.2312 9.99995 13.3504L11.4313 16.2571C11.6008 16.5961 11.8519 16.7091 12.1156 16.7091ZM12.4107 9.29492H13.9299C14.3694 9.29492 14.6456 9.03753 14.6456 8.6483C14.6456 8.25907 14.3631 8.00167 13.9236 8.00167H12.3353L11.2304 6.80259L11.1111 8.52902L11.582 8.99986C11.808 9.22586 12.0214 9.29492 12.4107 9.29492ZM6.02604 16.7091C6.24576 16.7091 6.44038 16.6087 6.57849 16.4455L8.59998 14.041C8.80715 13.7899 8.83226 13.7271 8.92015 13.4823C8.97037 13.3191 9.01432 13.1621 9.05198 13.0114L7.89685 11.5675L7.55784 13.1433L5.64308 15.4159C5.4673 15.6168 5.34802 15.7925 5.34802 16.0437C5.34802 16.4329 5.64308 16.7091 6.02604 16.7091Z"
+                      fill="#302F37"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <p class="location_wrapper-list--text">Пляж, 10 минут</p>
+              <div class="location_box-cover">
+                <p class="location_box-cover--black">Пляж</p>
+                <p class="location_box-cover--gray">10 минут</p>
+              </div>
+            </li>
+            <li
+              class="location_wrapper-list--item location_wrapper-list--item-mobile"
+            >
+              <div class="location_box location_box-mobile">
+                <span class="location_box-car location_box-car-mobile"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.58395 15.7546H4.34358C4.8207 15.7546 5.19109 15.3842 5.19109 14.9071V13.8838C6.57223 13.9654 8.4556 14.0156 9.99997 14.0156C11.5381 14.0156 13.4214 13.9654 14.8026 13.8838V14.9071C14.8026 15.3842 15.173 15.7546 15.6564 15.7546H16.4097C16.8931 15.7546 17.2635 15.3842 17.2635 14.9071V13.256C17.4707 13.0112 17.5837 12.6847 17.5837 12.2829V11.178C17.5837 10.0731 17.3891 9.45159 16.7927 8.69824L16.2339 7.99512C16.0016 6.86509 15.5873 5.67857 15.3676 5.21401C15.016 4.47321 14.338 4.03376 13.4716 3.91448C13.0134 3.8517 11.6699 3.82031 9.99997 3.82031C8.33004 3.82031 6.98029 3.85798 6.52829 3.91448C5.66194 4.02121 4.97764 4.47321 4.63236 5.21401C4.41263 5.67857 3.99829 6.86509 3.76601 7.99512L3.20728 8.69824C2.61087 9.45159 2.41626 10.0731 2.41626 11.178V12.2829C2.41626 12.6847 2.52926 13.0112 2.73643 13.256V14.9071C2.73643 15.3842 3.10683 15.7546 3.58395 15.7546ZM9.99997 12.9986C7.84664 12.9986 5.17226 12.8982 4.15524 12.7789C3.61534 12.7161 3.41445 12.4399 3.41445 11.9628V11.1215C3.41445 10.274 3.57767 9.87221 4.01712 9.28836L4.69514 8.40318C4.85209 7.56194 5.26015 6.25614 5.51754 5.6974C5.73099 5.25167 6.13278 4.99428 6.67896 4.92522C7.11213 4.86872 8.33632 4.8185 9.99997 4.8185C11.6636 4.8185 12.9066 4.875 13.3084 4.92522C13.8734 4.99428 14.2627 5.25795 14.4761 5.70368C14.7461 6.24986 15.1416 7.54939 15.2985 8.40318L15.9765 9.28836C16.4223 9.87221 16.5792 10.274 16.5792 11.1215V11.9628C16.5792 12.4399 16.3783 12.7161 15.8447 12.7789C14.8277 12.8982 12.1533 12.9986 9.99997 12.9986ZM5.54893 7.77539C5.48615 8.03278 5.59916 8.15206 5.86911 8.13951C6.79196 8.08301 7.95337 8.02651 9.99997 8.02651C12.0466 8.02651 13.208 8.08301 14.1245 8.13951C14.4008 8.15206 14.5075 8.03278 14.451 7.77539C14.3129 7.17271 14.0555 6.3817 13.8734 6.0678C13.6976 5.75391 13.4968 5.62207 13.1264 5.57185C12.6995 5.51535 11.6762 5.4714 9.99997 5.4714C8.32377 5.4714 7.29419 5.51535 6.87357 5.57185C6.50317 5.62207 6.296 5.75391 6.1265 6.0678C5.94444 6.3817 5.68705 7.17271 5.54893 7.77539ZM5.45476 12.1888C6.05744 12.1888 6.50945 11.7367 6.50945 11.1403C6.50945 10.5377 6.05744 10.0857 5.45476 10.0857C4.85836 10.0857 4.40635 10.5377 4.40635 11.1403C4.40635 11.7367 4.85836 12.1888 5.45476 12.1888ZM14.5389 12.1888C15.1416 12.1888 15.5936 11.7367 15.5936 11.1403C15.5936 10.5377 15.1416 10.0857 14.5389 10.0857C13.9425 10.0857 13.4905 10.5377 13.4905 11.1403C13.4905 11.7367 13.9425 12.1888 14.5389 12.1888ZM8.30493 11.9251H11.695C12.1407 11.9251 12.4546 11.6112 12.4546 11.1655C12.4546 10.7197 12.1407 10.4058 11.695 10.4058H8.30493C7.85292 10.4058 7.53903 10.7197 7.53903 11.1655C7.53903 11.6112 7.85292 11.9251 8.30493 11.9251Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <span class="location_box-human location_box-human-mobile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.97484 4.74972C10.8098 4.74972 11.4878 4.05915 11.4878 3.25558C11.4878 2.41434 10.8098 1.73633 9.97484 1.73633C9.13987 1.73633 8.4807 2.41434 8.4807 3.25558C8.4807 4.05915 9.13987 4.74972 9.97484 4.74972ZM12.1156 16.7091C12.4734 16.7091 12.7936 16.4455 12.7936 16.006C12.7936 15.8428 12.7497 15.6921 12.6618 15.5163L11.3183 12.7917C11.199 12.5469 11.0609 12.3271 10.9354 12.1514L10.1129 10.9837L10.1632 10.8267C10.3892 10.1048 10.4771 9.66532 10.5273 8.97475L10.6654 7.03488C10.7345 6.08064 10.182 5.30218 9.18382 5.30218C8.45558 5.30218 7.92824 5.69768 7.25023 6.35686L6.22065 7.38016C5.86909 7.72545 5.75609 8.00795 5.7247 8.4474L5.59286 10.042C5.56147 10.4752 5.80631 10.7577 6.19554 10.7828C6.56594 10.8079 6.84216 10.5882 6.88611 10.1236L7.0305 8.37835L7.63946 7.83845C7.75246 7.738 7.91568 7.7945 7.90313 7.96401L7.79013 9.53348C7.73362 10.2931 8.06635 10.8456 8.44303 11.3164L9.7865 13.0052C9.91833 13.1684 9.93717 13.2312 9.99995 13.3504L11.4313 16.2571C11.6008 16.5961 11.8519 16.7091 12.1156 16.7091ZM12.4107 9.29492H13.9299C14.3694 9.29492 14.6456 9.03753 14.6456 8.6483C14.6456 8.25907 14.3631 8.00167 13.9236 8.00167H12.3353L11.2304 6.80259L11.1111 8.52902L11.582 8.99986C11.808 9.22586 12.0214 9.29492 12.4107 9.29492ZM6.02604 16.7091C6.24576 16.7091 6.44038 16.6087 6.57849 16.4455L8.59998 14.041C8.80715 13.7899 8.83226 13.7271 8.92015 13.4823C8.97037 13.3191 9.01432 13.1621 9.05198 13.0114L7.89685 11.5675L7.55784 13.1433L5.64308 15.4159C5.4673 15.6168 5.34802 15.7925 5.34802 16.0437C5.34802 16.4329 5.64308 16.7091 6.02604 16.7091Z"
+                      fill="#302F37"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <p class="location_wrapper-list--text">Маркет, 5 минут</p>
+              <div class="location_box-cover">
+                <p class="location_box-cover--black">Маркет</p>
+                <p class="location_box-cover--gray">5 минут</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="around" id="section-around">
+        <div class="container">
+          <h3 class="around_title">Места рядом</h3>
+          <div class="swiper around-swiper-mobile">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="around_wrapper-mobile">
+                  <img
+                    class="around_wrapper-mobile--img"
+                    src="./img/around-mobile.png"
+                    alt="Гольф"
+                  />
+                  <button
+                    class="around_card-btn around_card-btn-mobile"
+                    type="button"
+                  >
+                    Гольф
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="around_wrapper-mobile">
+                  <img
+                    class="around_wrapper-mobile--img"
+                    src="./img/around-mobile.png"
+                    alt="Гольф"
+                  />
+                  <button
+                    class="around_card-btn around_card-btn-mobile"
+                    type="button"
+                  >
+                    Гольф
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="around_wrapper-mobile">
+                  <img
+                    class="around_wrapper-mobile--img"
+                    src="./img/around-mobile.png"
+                    alt="Гольф"
+                  />
+                  <button
+                    class="around_card-btn around_card-btn-mobile"
+                    type="button"
+                  >
+                    Гольф
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="around_wrapper-mobile">
+                  <img
+                    class="around_wrapper-mobile--img"
+                    src="./img/around-mobile.png"
+                    alt="Гольф"
+                  />
+                  <button
+                    class="around_card-btn around_card-btn-mobile"
+                    type="button"
+                  >
+                    Гольф
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar swiper-scrollbar-around-mobile"></div>
+          </div>
+        </div>
+        <div class="swiper around-swiper">
+          <div class="swiper-wrapper around-swiper-wrapper">
+            <div class="swiper-slide swiper-slide-around">
+              <div class="around_card">
+                <img
+                  class="around_card-img"
+                  src="./img/around-school.png"
+                  alt="Гольф"
+                />
+                <button class="around_card-btn" type="button">Маркет</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-around">
+              <div class="around_card">
+                <img
+                  class="around_card-img"
+                  src="./img/around-shop.png"
+                  alt="Гольф"
+                />
+                <button class="around_card-btn" type="button">Школа</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-around">
+              <div class="around_card">
+                <img
+                  class="around_card-img"
+                  src="./img/around-school.png"
+                  alt="Гольф"
+                />
+                <button class="around_card-btn" type="button">Маркет</button>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-around">
+              <div class="around_card">
+                <img
+                  class="around_card-img"
+                  src="./img/around-shop.png"
+                  alt="Гольф"
+                />
+                <button class="around_card-btn" type="button">Школа</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar around-swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="catalog" id="section-catalog">
+        <div class="container">
+          <h3 class="catalog_title catalog_title-mobile">Каталог района</h3>
+          <div class="catalog_descr">
+            <div class="catalog_content">
+              <h3 class="catalog_title">Каталог района</h3>
+              <img
+                loading="lazy"
+                class="catalog_img-mobile"
+                src="./img/catalog-mobile.png"
+                alt="Буклет Района"
+              />
+              <p class="catalog_text catalog_text-mobile">
+                Мы собрали подборку жилых проектов в Марбелье, которые также
+                могут вас заинтересовать
+              </p>
+              <div class="catalog_wrapper">
+                <button
+                  class="catalog_wrapper-btn--black"
+                  type="button"
+                  id="catalog-show-download"
+                >
+                  Скачать на сайте
+                </button>
+                <button
+                  class="catalog_wrapper-mobile-btn--black"
+                  type="button"
+                  id="catalog-show-download-mobile"
+                >
+                  Скачать на сайте
+                </button>
+                <a href="#" class="catalog_wrapper-btn--white" target="_blank">
+                  <span class="catalog_wrapper-span--tg"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z"
+                        fill="#302F37"
+                      />
+                    </svg>
+                  </span>
+                  Получить в Telegram
+                </a>
+                <a href="#" class="catalog_wrapper-btn--white" target="_blank">
+                  <span class="catalog_wrapper-span--wapp"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19.3547 4.05156C17.3906 2.08281 14.775 1 11.9953 1C6.25781 1 1.58906 5.66875 1.58906 11.4062C1.58906 13.2391 2.06719 15.0297 2.97656 16.6094L1.5 22L7.01719 20.5516C8.53594 21.3813 10.2469 21.8172 11.9906 21.8172H11.9953C17.7281 21.8172 22.5 17.1484 22.5 11.4109C22.5 8.63125 21.3188 6.02031 19.3547 4.05156ZM11.9953 20.0641C10.4391 20.0641 8.91562 19.6469 7.58906 18.8594L7.275 18.6719L4.00313 19.5297L4.875 16.3375L4.66875 16.0094C3.80156 14.6313 3.34688 13.0422 3.34688 11.4062C3.34688 6.63906 7.22812 2.75781 12 2.75781C14.3109 2.75781 16.4812 3.65781 18.1125 5.29375C19.7437 6.92969 20.7469 9.1 20.7422 11.4109C20.7422 16.1828 16.7625 20.0641 11.9953 20.0641ZM16.7391 13.5859C16.4813 13.4547 15.2016 12.8266 14.9625 12.7422C14.7234 12.6531 14.55 12.6109 14.3766 12.8734C14.2031 13.1359 13.7063 13.7172 13.5516 13.8953C13.4016 14.0688 13.2469 14.0922 12.9891 13.9609C11.4609 13.1969 10.4578 12.5969 9.45 10.8672C9.18281 10.4078 9.71719 10.4406 10.2141 9.44687C10.2984 9.27344 10.2562 9.12344 10.1906 8.99219C10.125 8.86094 9.60469 7.58125 9.38906 7.06094C9.17813 6.55469 8.9625 6.625 8.80313 6.61563C8.65313 6.60625 8.47969 6.60625 8.30625 6.60625C8.13281 6.60625 7.85156 6.67188 7.6125 6.92969C7.37344 7.19219 6.70312 7.82031 6.70312 9.1C6.70312 10.3797 7.63594 11.6172 7.7625 11.7906C7.89375 11.9641 9.59531 14.5891 12.2062 15.7188C13.8562 16.4312 14.5031 16.4922 15.3281 16.3703C15.8297 16.2953 16.8656 15.7422 17.0812 15.1328C17.2969 14.5234 17.2969 14.0031 17.2313 13.8953C17.1703 13.7781 16.9969 13.7125 16.7391 13.5859Z"
+                        fill="#302F37"
+                      />
+                    </svg>
+                  </span>
+                  Получить в Whatsapp
+                </a>
+              </div>
+            </div>
+            <div class="catalog_box">
+              <img
+                class="catalog_box-img"
+                src="./img/catalog-croped.png"
+                alt="Каталог"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="consult" id="section-consult">
+        <div class="container">
+          <img
+            class="consult_img"
+            src="./gifs/consult.gif"
+            alt="Arrow Animation"
+          />
+          <div class="consult_descr">
+            <h3 class="consult_descr-title">
+              Записаться на бесплатную констультацию
+            </h3>
+            <p class="consult_descr-text">
+              Укажите свои контакты и менеджер свяжется с вами, чтобы уточнить
+              удобное время просмотра.
+            </p>
+          </div>
+          <div class="consult_wrapper">
+            <button
+              class="catalog_wrapper-btn--black"
+              type="button"
+              data-menu="call-form-catalog"
+            >
+              Записаться на сайте
+            </button>
+            <button class="catalog_wrapper-sign-btn--black" type="button">
+              Записаться на сайте
+            </button>
+            <a href="#" class="catalog_wrapper-btn--white" target="_blank">
+              <span class="catalog_wrapper-span--tg"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z"
+                    fill="#302F37"
+                  />
+                </svg>
+              </span>
+              Получить в Telegram
+            </a>
+            <a href="#" class="catalog_wrapper-btn--white" target="_blank">
+              <span class="catalog_wrapper-span--wapp"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M19.3547 4.05156C17.3906 2.08281 14.775 1 11.9953 1C6.25781 1 1.58906 5.66875 1.58906 11.4062C1.58906 13.2391 2.06719 15.0297 2.97656 16.6094L1.5 22L7.01719 20.5516C8.53594 21.3813 10.2469 21.8172 11.9906 21.8172H11.9953C17.7281 21.8172 22.5 17.1484 22.5 11.4109C22.5 8.63125 21.3188 6.02031 19.3547 4.05156ZM11.9953 20.0641C10.4391 20.0641 8.91562 19.6469 7.58906 18.8594L7.275 18.6719L4.00313 19.5297L4.875 16.3375L4.66875 16.0094C3.80156 14.6313 3.34688 13.0422 3.34688 11.4062C3.34688 6.63906 7.22812 2.75781 12 2.75781C14.3109 2.75781 16.4812 3.65781 18.1125 5.29375C19.7437 6.92969 20.7469 9.1 20.7422 11.4109C20.7422 16.1828 16.7625 20.0641 11.9953 20.0641ZM16.7391 13.5859C16.4813 13.4547 15.2016 12.8266 14.9625 12.7422C14.7234 12.6531 14.55 12.6109 14.3766 12.8734C14.2031 13.1359 13.7063 13.7172 13.5516 13.8953C13.4016 14.0688 13.2469 14.0922 12.9891 13.9609C11.4609 13.1969 10.4578 12.5969 9.45 10.8672C9.18281 10.4078 9.71719 10.4406 10.2141 9.44687C10.2984 9.27344 10.2562 9.12344 10.1906 8.99219C10.125 8.86094 9.60469 7.58125 9.38906 7.06094C9.17813 6.55469 8.9625 6.625 8.80313 6.61563C8.65313 6.60625 8.47969 6.60625 8.30625 6.60625C8.13281 6.60625 7.85156 6.67188 7.6125 6.92969C7.37344 7.19219 6.70312 7.82031 6.70312 9.1C6.70312 10.3797 7.63594 11.6172 7.7625 11.7906C7.89375 11.9641 9.59531 14.5891 12.2062 15.7188C13.8562 16.4312 14.5031 16.4922 15.3281 16.3703C15.8297 16.2953 16.8656 15.7422 17.0812 15.1328C17.2969 14.5234 17.2969 14.0031 17.2313 13.8953C17.1703 13.7781 16.9969 13.7125 16.7391 13.5859Z"
+                    fill="#302F37"
+                  />
+                </svg>
+              </span>
+              Получить в Whatsapp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_content">
+          <p class="footer_content-logo">Лого</p>
+          <ul class="footer_content-list">
+            <li class="footer_content-item">
+              <a class="footer_content-link" href="#section-galery">Галерея</a>
+            </li>
+            <li class="footer_content-item">
+              <a class="footer_content-link" href="#section-about">О проекте</a>
+            </li>
+            <li class="footer_content-item">
+              <a class="footer_content-link" href="#">Платежные планы</a>
+            </li>
+            <li class="footer_content-item">
+              <a class="footer_content-link" href="#section-structure"
+                >Инфраструктура</a
+              >
+            </li>
+            <li class="footer_content-item">
+              <a class="footer_content-link" href="#section-catalog">Каталог</a>
+            </li>
+          </ul>
+          <button
+            class="header_content-consult--menu"
+            type="button"
+            id="footer-list"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M11.6248 11.6249H12.3748M11.6248 12.3749H12.3748M4.62476 11.6249H5.37476M4.62476 12.3749H5.37476M18.6248 11.6249H19.3748M18.6248 12.3749H19.3748M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM6 12C6 12.5523 5.55229 13 5 13C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11C5.55229 11 6 11.4477 6 12ZM20 12C20 12.5523 19.5523 13 19 13C18.4477 13 18 12.5523 18 12C18 11.4477 18.4477 11 19 11C19.5523 11 20 11.4477 20 12Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="header_content footer_box">
+          <ul class="footer_content-mobile-list">
+            <li class="footer_content-mobile--item">
+              <a class="footer_content-mobile--link" href="#section-galery"
+                >Галерея</a
+              >
+            </li>
+            <li class="footer_content-mobile--item">
+              <a class="footer_content-mobile--link" href="#section-about"
+                >О проекте</a
+              >
+            </li>
+            <li class="footer_content-mobile--item">
+              <a class="footer_content-mobile--link" href="#" target="_blank"
+                >Платежные планы</a
+              >
+            </li>
+            <li class="footer_content-mobile--item">
+              <a class="footer_content-mobile--link" href="#section-structure"
+                >Инфраструктура</a
+              >
+            </li>
+            <li class="footer_content-mobile--item">
+              <a class="footer_content-mobile--link" href="#section-catalog"
+                >Каталог</a
+              >
+            </li>
+          </ul>
+          <div class="header_content-social footer_content-social">
+            <a class="header_content-social--links" href="#" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a class="header_content-social--links" href="#" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M18.8547 4.05156C16.8906 2.08281 14.275 1 11.4953 1C5.75781 1 1.08906 5.66875 1.08906 11.4062C1.08906 13.2391 1.56719 15.0297 2.47656 16.6094L1 22L6.51719 20.5516C8.03594 21.3813 9.74687 21.8172 11.4906 21.8172H11.4953C17.2281 21.8172 22 17.1484 22 11.4109C22 8.63125 20.8188 6.02031 18.8547 4.05156ZM11.4953 20.0641C9.93906 20.0641 8.41562 19.6469 7.08906 18.8594L6.775 18.6719L3.50313 19.5297L4.375 16.3375L4.16875 16.0094C3.30156 14.6313 2.84688 13.0422 2.84688 11.4062C2.84688 6.63906 6.72812 2.75781 11.5 2.75781C13.8109 2.75781 15.9812 3.65781 17.6125 5.29375C19.2437 6.92969 20.2469 9.1 20.2422 11.4109C20.2422 16.1828 16.2625 20.0641 11.4953 20.0641ZM16.2391 13.5859C15.9813 13.4547 14.7016 12.8266 14.4625 12.7422C14.2234 12.6531 14.05 12.6109 13.8766 12.8734C13.7031 13.1359 13.2063 13.7172 13.0516 13.8953C12.9016 14.0688 12.7469 14.0922 12.4891 13.9609C10.9609 13.1969 9.95781 12.5969 8.95 10.8672C8.68281 10.4078 9.21719 10.4406 9.71406 9.44687C9.79844 9.27344 9.75625 9.12344 9.69062 8.99219C9.625 8.86094 9.10469 7.58125 8.88906 7.06094C8.67813 6.55469 8.4625 6.625 8.30313 6.61563C8.15313 6.60625 7.97969 6.60625 7.80625 6.60625C7.63281 6.60625 7.35156 6.67188 7.1125 6.92969C6.87344 7.19219 6.20312 7.82031 6.20312 9.1C6.20312 10.3797 7.13594 11.6172 7.2625 11.7906C7.39375 11.9641 9.09531 14.5891 11.7062 15.7188C13.3562 16.4312 14.0031 16.4922 14.8281 16.3703C15.3297 16.2953 16.3656 15.7422 16.5812 15.1328C16.7969 14.5234 16.7969 14.0031 16.7313 13.8953C16.6703 13.7781 16.4969 13.7125 16.2391 13.5859Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="footer_box-content">
+            <ul class="footer_box-list">
+              <li class="footer_box-list--item">
+                <a class="footer_box-list--link" href="#section-deals"
+                  >Аренда</a
+                >
+              </li>
+              <li class="footer_box-list--item">
+                <a class="footer_box-list--link" href="#section-interior"
+                  >Отделка</a
+                >
+              </li>
+              <li class="footer_box-list--item">
+                <a class="footer_box-list--link" href="#section-area"
+                  >О районе</a
+                >
+              </li>
+              <li class="footer_box-list--item">
+                <a class="footer_box-list--link" href="#section-location"
+                  >Расположение</a
+                >
+              </li>
+              <li class="footer_box-list--item">
+                <a class="footer_box-list--link" href="#section-around"
+                  >Места рядом</a
+                >
+              </li>
+              <li class="footer_box-list--item">
+                <a class="footer_box-list--link" href="#section-constructor"
+                  >Застройщик</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="header_content-consult footer_content-consult">
+            <p class="header_content-consult-text footer_content-consult-text">
+              Получите бесплатную констультацию от нашего эксперта
+            </p>
+            <button
+              class="header_content-consult--form footer_content-consult--form"
+              id="footer-modal-call"
+              type="button"
+            >
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+        <ul class="footer_list">
+          <li class="footer_list-item">
+            <a class="footer_list-link" href="#" target="_blank"
+              >Пользовательское соглашение</a
+            >
+          </li>
+          <li class="footer_list-item">
+            <a class="footer_list-link" href="#" target="_blank"
+              >Политика обработки персональных данных</a
+            >
+          </li>
+          <li class="footer_list-item">
+            <a class="footer_list-link" href="#" target="_blank"
+              >Файлы cookie</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="menu_desktop">
+      <button class="menu_desktop-close" type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M18 6L6 18M18 18L6 6.00001"
+            stroke="#302F37"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <ul class="menu_desktop-list">
+        <li class="menu_desktop-list--item">
+          <a href="#section-galery" class="menu_desktop-list--link">Галерея</a>
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-about" class="menu_desktop-list--link">О проекте</a>
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-plans" class="menu_desktop-list--link"
+            >Платежные планы</a
+          >
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-deals" class="menu_desktop-list--link">Аренда</a>
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-interior" class="menu_desktop-list--link"
+            >Отделка</a
+          >
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-structure" class="menu_desktop-list--link"
+            >Инфраструктура</a
+          >
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-constructor" class="menu_desktop-list--link"
+            >Застройщик</a
+          >
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-area" class="menu_desktop-list--link">О районе</a>
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-location" class="menu_desktop-list--link"
+            >Расположение</a
+          >
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-around" class="menu_desktop-list--link"
+            >Места рядом</a
+          >
+        </li>
+        <li class="menu_desktop-list--item">
+          <a href="#section-catalog" class="menu_desktop-list--link">Каталог</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu_desktop-overlay"></div>
+    <form action="#" class="modal_call">
+      <button class="modal_call-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M18 6L6 18M18 18L6 6.00001"
+            stroke="#302F37"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <p class="modal_call-title">Закажите звонок эксперта</p>
+      <p class="modal_call-text">
+        Заполните форму, и наш эксперт свяжется с вами в первую свободную минуту
+      </p>
+      <div class="modal_call-wrapper">
+        <input
+          type="text"
+          class="modal_call-wrapper--input-name"
+          placeholder="Ваше имя"
+        />
+        <input
+          type="text"
+          class="modal_call-wrapper--input-phone"
+          placeholder="+34 000 000 000"
+        />
+        <button class="modal_call-btn--send" type="submit">
+          Заказать звонок
+        </button>
+      </div>
+      <p class="modal_call-text--accept">
+        Отправляя заявку, вы даёте своё согласие на обработку персональных
+        данных.
+      </p>
+      <p class="modal_call-text--accept-link">
+        Наш сайт защищен с помощью reCAPTCHA и соответствует
+        <a href="#" class="modal_call-text--link" target="_blank"
+          >Политике конфиденциальности</a
+        >
+        и
+        <a href="#" class="modal_call-text--link" target="_blank"
+          >Условиям использования</a
+        >
+        Google.
+      </p>
+    </form>
+    <form action="#" class="modal_call-mobile">
+      <button class="modal_call-mobile--btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M18 6L6 18M18 18L6 6.00001"
+            stroke="#302F37"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <p class="modal_call-mobile--title">Закажите звонок эксперта</p>
+      <p class="modal_call-mobile--text">
+        Заполните форму, и наш эксперт свяжется с вами в первую свободную минуту
+      </p>
+      <div class="modal_call-wrapper">
+        <input
+          type="text"
+          class="modal_call-mobile-wrapper--input-name"
+          placeholder="Ваше имя"
+        />
+        <input
+          type="text"
+          class="modal_call-mobile-wrapper--input-phone"
+          placeholder="+34 000 000 000"
+        />
+        <button class="modal_call-mobile--btn--send" type="submit">
+          Заказать звонок
+        </button>
+      </div>
+      <p class="modal_call-mobile-text--accept">
+        Отправляя заявку, вы даёте своё согласие на обработку персональных
+        данных.
+      </p>
+      <p class="modal_call-mobile-text--accept-link">
+        Наш сайт защищен с помощью reCAPTCHA и соответствует
+        <a href="#" class="modal_call-mobile-text--link" target="_blank"
+          >Политике конфиденциальности</a
+        >
+        и
+        <a href="#" class="modal_call-mobile-text--link" target="_blank"
+          >Условиям использования</a
+        >
+        Google.
+      </p>
+    </form>
+    <div class="modal_call-overlay"></div>
+    <div class="modal_call-mobile-overlay"></div>
+    <form action="#" class="modal_download">
+      <div class="modal_download-btns">
+        <button class="modal_download-back">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path
+              d="M14.0001 6.5L8.7072 11.7929C8.31668 12.1834 8.31668 12.8166 8.7072 13.2071L14.0001 18.5"
+              stroke="#302F37"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <button class="modal_download-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M18 6L6 18M18 18L6 6.00001"
+              stroke="#302F37"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <p class="modal_download-title">Скачайте галерею проекта в PDF</p>
+      <p class="modal_download-text">
+        Все фотографии проекта, удобно отсортированные по разделам
+      </p>
+
+      <div class="modal_download-wrapper">
+        <div class="modal_download-inner">
+          <input
+            type="text"
+            class="modal_download-wrapper--input-name"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="text"
+            class="modal_download-wrapper--input-phone"
+            placeholder="+34 000 000 000"
+          />
+          <button class="modal_download-btn--send" type="submit">
+            Заказать звонок
+          </button>
+        </div>
+
+        <div class="modal_download-top">
+          <button class="modal_download-top--secondform">
+            Скачать на сайте
+          </button>
+          <a href="#" class="modal_download-top--link" target="_blank">
+            <span class="modal_download-top--span"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z"
+                  fill="#302F37"
+                />
+              </svg> </span
+            >Получить а Telegram
+          </a>
+          <a href="#" class="modal_download-top--link" target="_blank">
+            <span class="modal_download-top--span"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M19.3547 4.05156C17.3906 2.08281 14.775 1 11.9953 1C6.25781 1 1.58906 5.66875 1.58906 11.4062C1.58906 13.2391 2.06719 15.0297 2.97656 16.6094L1.5 22L7.01719 20.5516C8.53594 21.3813 10.2469 21.8172 11.9906 21.8172H11.9953C17.7281 21.8172 22.5 17.1484 22.5 11.4109C22.5 8.63125 21.3188 6.02031 19.3547 4.05156ZM11.9953 20.0641C10.4391 20.0641 8.91562 19.6469 7.58906 18.8594L7.275 18.6719L4.00313 19.5297L4.875 16.3375L4.66875 16.0094C3.80156 14.6313 3.34688 13.0422 3.34688 11.4062C3.34688 6.63906 7.22812 2.75781 12 2.75781C14.3109 2.75781 16.4812 3.65781 18.1125 5.29375C19.7437 6.92969 20.7469 9.1 20.7422 11.4109C20.7422 16.1828 16.7625 20.0641 11.9953 20.0641ZM16.7391 13.5859C16.4813 13.4547 15.2016 12.8266 14.9625 12.7422C14.7234 12.6531 14.55 12.6109 14.3766 12.8734C14.2031 13.1359 13.7063 13.7172 13.5516 13.8953C13.4016 14.0688 13.2469 14.0922 12.9891 13.9609C11.4609 13.1969 10.4578 12.5969 9.45 10.8672C9.18281 10.4078 9.71719 10.4406 10.2141 9.44687C10.2984 9.27344 10.2562 9.12344 10.1906 8.99219C10.125 8.86094 9.60469 7.58125 9.38906 7.06094C9.17813 6.55469 8.9625 6.625 8.80313 6.61563C8.65313 6.60625 8.47969 6.60625 8.30625 6.60625C8.13281 6.60625 7.85156 6.67188 7.6125 6.92969C7.37344 7.19219 6.70312 7.82031 6.70312 9.1C6.70312 10.3797 7.63594 11.6172 7.7625 11.7906C7.89375 11.9641 9.59531 14.5891 12.2062 15.7188C13.8562 16.4312 14.5031 16.4922 15.3281 16.3703C15.8297 16.2953 16.8656 15.7422 17.0812 15.1328C17.2969 14.5234 17.2969 14.0031 17.2313 13.8953C17.1703 13.7781 16.9969 13.7125 16.7391 13.5859Z"
+                  fill="#302F37"
+                />
+              </svg>
+            </span>
+            Получить а Whatsapp
+          </a>
+        </div>
+      </div>
+
+      <p class="modal_download-text--accept">
+        Отправляя заявку, вы даёте своё согласие на обработку персональных
+        данных.
+      </p>
+      <p class="modal_download-text--accept-link">
+        Наш сайт защищен с помощью reCAPTCHA и соответствует
+        <a href="#" class="modal_download-text--link" target="_blank"
+          >Политике конфиденциальности</a
+        >
+        и
+        <a href="#" class="modal_download-text--link" target="_blank"
+          >Условиям использования</a
+        >
+        Google.
+      </p>
+    </form>
+    <div class="modal_download-overlay"></div>
+
+    <form action="#" class="modal_download-mobile">
+      <div class="modal_download-mobile-btns">
+        <button class="modal_download-mobile-back">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path
+              d="M14.0001 6.5L8.7072 11.7929C8.31668 12.1834 8.31668 12.8166 8.7072 13.2071L14.0001 18.5"
+              stroke="#302F37"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <button class="modal_download-mobile-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M18 6L6 18M18 18L6 6.00001"
+              stroke="#302F37"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <p class="modal_download-mobile-title">Скачайте галерею проекта в PDF</p>
+      <p class="modal_download-mobile-text">
+        Все фотографии проекта, удобно отсортированные по разделам
+      </p>
+
+      <div class="modal_download-mobile-wrapper">
+        <div class="modal_download-mobile-inner">
+          <input
+            type="text"
+            class="modal_download-mobile-wrapper--input-name"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="text"
+            class="modal_download-mobile-wrapper--input-phone"
+            placeholder="+34 000 000 000"
+          />
+          <button class="modal_download-mobile-btn--send" type="submit">
+            Заказать звонок
+          </button>
+        </div>
+
+        <div class="modal_download-mobile-top">
+          <button class="modal_download-mobile-top--secondform">
+            Скачать на сайте
+          </button>
+          <a href="#" class="modal_download-mobile-top--link" target="_blank">
+            <span class="modal_download-top--span"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z"
+                  fill="#302F37"
+                />
+              </svg> </span
+            >Получить а Telegram
+          </a>
+          <a href="#" class="modal_download-mobile-top--link" target="_blank">
+            <span class="modal_download-top--span"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M19.3547 4.05156C17.3906 2.08281 14.775 1 11.9953 1C6.25781 1 1.58906 5.66875 1.58906 11.4062C1.58906 13.2391 2.06719 15.0297 2.97656 16.6094L1.5 22L7.01719 20.5516C8.53594 21.3813 10.2469 21.8172 11.9906 21.8172H11.9953C17.7281 21.8172 22.5 17.1484 22.5 11.4109C22.5 8.63125 21.3188 6.02031 19.3547 4.05156ZM11.9953 20.0641C10.4391 20.0641 8.91562 19.6469 7.58906 18.8594L7.275 18.6719L4.00313 19.5297L4.875 16.3375L4.66875 16.0094C3.80156 14.6313 3.34688 13.0422 3.34688 11.4062C3.34688 6.63906 7.22812 2.75781 12 2.75781C14.3109 2.75781 16.4812 3.65781 18.1125 5.29375C19.7437 6.92969 20.7469 9.1 20.7422 11.4109C20.7422 16.1828 16.7625 20.0641 11.9953 20.0641ZM16.7391 13.5859C16.4813 13.4547 15.2016 12.8266 14.9625 12.7422C14.7234 12.6531 14.55 12.6109 14.3766 12.8734C14.2031 13.1359 13.7063 13.7172 13.5516 13.8953C13.4016 14.0688 13.2469 14.0922 12.9891 13.9609C11.4609 13.1969 10.4578 12.5969 9.45 10.8672C9.18281 10.4078 9.71719 10.4406 10.2141 9.44687C10.2984 9.27344 10.2562 9.12344 10.1906 8.99219C10.125 8.86094 9.60469 7.58125 9.38906 7.06094C9.17813 6.55469 8.9625 6.625 8.80313 6.61563C8.65313 6.60625 8.47969 6.60625 8.30625 6.60625C8.13281 6.60625 7.85156 6.67188 7.6125 6.92969C7.37344 7.19219 6.70312 7.82031 6.70312 9.1C6.70312 10.3797 7.63594 11.6172 7.7625 11.7906C7.89375 11.9641 9.59531 14.5891 12.2062 15.7188C13.8562 16.4312 14.5031 16.4922 15.3281 16.3703C15.8297 16.2953 16.8656 15.7422 17.0812 15.1328C17.2969 14.5234 17.2969 14.0031 17.2313 13.8953C17.1703 13.7781 16.9969 13.7125 16.7391 13.5859Z"
+                  fill="#302F37"
+                />
+              </svg>
+            </span>
+            Получить а Whatsapp
+          </a>
+        </div>
+      </div>
+
+      <p class="modal_download-mobile-text--accept">
+        Отправляя заявку, вы даёте своё согласие на обработку персональных
+        данных.
+      </p>
+      <p class="modal_download-mobile-text--accept-link">
+        Наш сайт защищен с помощью reCAPTCHA и соответствует
+        <a href="#" class="modal_download-mobile-text--link" target="_blank"
+          >Политике конфиденциальности</a
+        >
+        и
+        <a href="#" class="modal_download-mobile-text--link" target="_blank"
+          >Условиям использования</a
+        >
+        Google.
+      </p>
+    </form>
+    <div class="modal_download-mobile-overlay"></div>
+
+    <div class="vertical_slider-desktop">
+      <div class="container">
+        <div class="swiper swiper-vertical-desktop">
+          <div class="swiper-wrapper swiper-wrapper-vertical-desktop">
+            <div class="swiper-slide swiper-slide-vertical-desktop">
+              <img
+                class="swiper-vertical-desktop--img"
+                id="swiper-vertical-desktop--img-first"
+                src="./img/vertical-desktop1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-desktop">
+              <img
+                class="swiper-vertical-desktop--img"
+                src="./img/vertical-desktop1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-desktop">
+              <img
+                class="swiper-vertical-desktop--img"
+                src="./img/vertical-desktop1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-desktop">
+              <img
+                class="swiper-vertical-desktop--img"
+                src="./img/vertical-desktop1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-desktop">
+              <img
+                class="swiper-vertical-desktop--img"
+                src="./img/vertical-desktop1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-desktop">
+              <img
+                class="swiper-vertical-desktop--img"
+                src="./img/vertical-desktop1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="close_vertical-slider--desktop">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M18 6L6 18M18 18L6 6.00001"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="vertical_slider-mobile">
+      <div class="container">
+        <div class="swiper swiper-vertical-mobile">
+          <div class="swiper-wrapper swiper-wrapper-vertical-mobile">
+            <div class="swiper-slide swiper-slide-vertical-mobile">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-mobile1.png"
+                id="swiper-vertical-mobile--img-first"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-mobile">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-mobile1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-mobile">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-mobile1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-mobile">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-mobile1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-mobile">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-mobile1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-mobile">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-mobile1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="close_vertical-slider--mobile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M18 6L6 18M18 18L6 6.00001"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="vertical_slider-text">
+      <div class="container">
+        <div class="swiper swiper-vertical-text">
+          <div class="swiper-wrapper swiper-wrapper-vertical-text">
+            <div class="swiper-slide swiper-slide-vertical-text1">
+              <div class="swiper-vertical-text-wrapper">
+                <p class="swiper-vertical-text-wrapper--title">
+                  Марбелья: Жемчужина Коста-дель-Соль
+                </p>
+                <p class="swiper-vertical-text-wrapper--text">
+                  Город предлагает разнообразные развлечения: элитные
+                  гольф-клубы, изысканные рестораны, эксклюзивные бутики и
+                  оживлённую ночную жизнь. Старый город Марбельи с его узкими
+                  улочками и белоснежными домами очаровывает каждого посетителя.
+                  Прогулка по набережной Пуэрто Банус позволяет насладиться
+                  видом на роскошные яхты и встретить модную публику.
+                </p>
+                <img
+                  class="swiper-vertical-text--img"
+                  src="./img/vertical-text1.png"
+                  alt="Вид из Отеля"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide-vertical-text">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-text1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-text">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-text1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-text">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-text1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide-vertical-text">
+              <img
+                class="swiper-vertical-mobile--img"
+                src="./img/vertical-text1.png"
+                alt="Вид из Отеля"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="close_vertical-slider--text">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M18 6L6 18M18 18L6 6.00001"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

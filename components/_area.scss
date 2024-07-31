@@ -1,0 +1,70 @@
+@import "../scss/mixins/mixins";
+
+.area {
+  padding: 5.2rem 0rem;
+  &_box {
+    display: flex;
+    gap: 10.4rem;
+    margin-bottom: 4rem;
+    &-title {
+      @include h3;
+      max-width: 15.5rem;
+      width: 100%;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      &--title {
+        @include header-p20-gray;
+      }
+      &--text {
+        @include deals-p;
+      }
+    }
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    &-view {
+      display: flex;
+      gap: 2.4rem;
+      &--img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    &-descr {
+      display: flex;
+      gap: 2.4rem;
+      &--img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 53.6rem;
+      padding: 3.2rem 2.4rem;
+      width: 100%;
+      border-radius: 4rem;
+      background: #f6f6f6;
+      &--text {
+        @include deals-p;
+      }
+    }
+  }
+}
+
+.area_box-wrapper--text-mobile {
+  display: none;
+}
+.area_content-view-mobile {
+  display: none;
+}
+.area_content-mobile--btn {
+  display: none;
+}

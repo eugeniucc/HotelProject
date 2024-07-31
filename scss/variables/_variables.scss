@@ -1,0 +1,38 @@
+// COLORS
+:root {
+  --btn-bg: #302f37;
+  --btn-hov: #121216;
+  --btn-hov-white: #c4c4c4;
+  --black: #000;
+  --white: #fff;
+  --gray: #939393;
+  --input-gray: #9f9f9f;
+  --light-gray: #d9d9d9;
+}
+// FONT SIZE
+
+$base-font-size: 10px;
+
+// MEDIA BREAKPOINTS
+
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// Z INDEX
+
+// 1 : #map
+// 2 : class="header-leaflet-mobile"; class="header_content-consult--form footer_content-consult--form";  menu_desktop-overlay
+
+// 3 : class="footer_box-content"; menu_desktop modal_call .modal_call-mobile
+
+body.noscroll {
+  overflow: hidden;
+}
+
+#map {
+  z-index: 1;
+}

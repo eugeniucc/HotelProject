@@ -1,0 +1,86 @@
+@import "../scss/animations/btn-hov";
+@import "../scss/mixins/mixins";
+@import "../scss/innercomp/input-form";
+@import "../scss/innercomp/btn";
+
+.about {
+  padding: 5.2rem 0rem;
+  &_content {
+    display: flex;
+    gap: 2.4rem;
+    margin-bottom: 4rem;
+    &-title {
+      @include h3;
+    }
+    &-text {
+      @include header-p20-gray;
+      display: flex;
+      align-self: end;
+    }
+  }
+  &_swiper-container {
+    max-width: 125.6rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &_card {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    border-radius: 4rem;
+    background: var(--btn-bg);
+    padding: 5.6rem 7.2rem;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      max-width: 16rem;
+      width: 100%;
+      &--img {
+        width: 100%;
+        border-radius: 50%;
+      }
+      &--wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.02rem;
+      }
+    }
+  }
+}
+
+.about_card-mobile {
+  display: none;
+}
+
+// SWIPER ABOUT
+
+.swiper-about-button--next,
+.swiper-about-button--prev {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 0.6px solid #302f37;
+  @include btn-hov-transparent;
+}
+.swiper-about-button--next::after,
+.swiper-about-button--prev::after {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-about-button--next::after {
+  background-image: url("../../icons/arrow-right-black.svg");
+}
+.swiper-about-button--prev::after {
+  background-image: url("../../icons/arrow-right-black.svg");
+  transform: rotate(180deg);
+}

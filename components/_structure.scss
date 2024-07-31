@@ -1,0 +1,28 @@
+@import "../scss/mixins/mixins";
+
+.structure {
+  padding: 5.2rem 0rem;
+  &_title {
+    @include h3;
+    margin-bottom: 2.4rem;
+  }
+  &_box {
+    display: flex;
+    gap: 2.4rem;
+    &-img {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 2.4rem;
+    }
+  }
+  &_content {
+    &-img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.structure-swiper-mobile {
+  display: none;
+}

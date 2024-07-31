@@ -1,0 +1,33 @@
+@import "../scss/mixins/mixins";
+
+.constructor {
+  padding: 5.2rem 0rem;
+  &_title {
+    @include h3;
+    margin-bottom: 4rem;
+  }
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5.6rem;
+    border-radius: 4rem;
+    background: linear-gradient(270deg, #fff 0%, #f6f6f6 100%);
+    &-text {
+      max-width: 60.4rem;
+      width: 100%;
+      @include deals-p;
+    }
+    &-img {
+      max-width: 100%;
+      border-radius: 4rem;
+    }
+  }
+}
+
+.constructor_wrapper-text--mobile {
+  display: none;
+}
+.constructor_wrapper-img-mobile {
+  display: none;
+}

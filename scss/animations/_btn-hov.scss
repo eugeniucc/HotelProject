@@ -1,0 +1,32 @@
+@mixin btn-hov-white {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--btn-hov);
+    border-color: var(--btn-hov);
+  }
+}
+@mixin btn-hov-black {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--btn-hov-white);
+    border-color: var(--btn-hov-white);
+  }
+}
+@mixin btn-hov-transparent {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+@mixin forms-input {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: #c4c4c4;
+  }
+}
+@mixin menu-desktop-close {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: var(--btn-hov-white);
+  }
+}

@@ -1,0 +1,59 @@
+@import "../scss/mixins/mixins";
+@import "../scss/innercomp/btn";
+@import "../scss/animations/btn-hov";
+
+.deals {
+  padding: 5.2rem 0rem;
+  &_title {
+    @include h3;
+    margin-bottom: 4rem;
+  }
+  &_wrapper {
+    display: flex;
+    padding: 5.6rem 7.2rem 0rem 0rem;
+    border-radius: 4rem;
+    background: linear-gradient(270deg, #f6f6f6 0%, #fff 100%);
+  }
+  &_box {
+    &-img {
+      border-radius: 4rem;
+    }
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 9.4rem;
+    &-text {
+      @include deals-p;
+    }
+    &-wrapper {
+      display: flex;
+      gap: 2.4rem;
+      &--text {
+        @include deals-p-small;
+        max-width: 36.4rem;
+        width: 100%;
+      }
+      &--btn {
+        @include btn-form;
+        max-width: 26.6rem;
+        @include btn-hov-white;
+        &-mobile {
+          @include btn-form;
+          max-width: 26.6rem;
+          @include btn-hov-white;
+        }
+      }
+    }
+  }
+}
+
+.deals_content-text--mobile {
+  display: none;
+}
+.deals_box-img-mobile {
+  display: none;
+}
+.deals_content-wrapper--btn-mobile {
+  display: none;
+}
