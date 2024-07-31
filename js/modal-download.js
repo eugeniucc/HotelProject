@@ -111,3 +111,36 @@ galeryShowModalDownload.addEventListener("click", () => {
   modalDownloadOverlay.classList.add("active");
   document.body.classList.add("noscroll");
 });
+
+// SECTION FORMS
+
+const formsShowModalDownloadNew = document.getElementById(
+  "forms_wrapper-btn-new"
+);
+const formsShowModalDownloadReady = document.getElementById(
+  "forms_wrapper-btn-ready"
+);
+
+formsShowModalDownloadNew.addEventListener("click", () => {
+  modalDownload.classList.add("active");
+  modalDownloadOverlay.classList.add("active");
+  document.body.classList.add("noscroll");
+});
+
+formsShowModalDownloadReady.addEventListener("click", () => {
+  modalDownload.classList.add("active");
+  modalDownloadOverlay.classList.add("active");
+  document.body.classList.add("noscroll");
+});
+
+// SECTION FORMS MOBILE
+
+const formsMobileModalDownload = document.getElementById(
+  "forms_wrapper-btn-mobile-all"
+);
+
+formsMobileModalDownload.addEventListener("click", () => {
+  modalDownload.classList.add("active");
+  modalDownloadOverlay.classList.add("active");
+  document.body.classList.add("noscroll");
+});
